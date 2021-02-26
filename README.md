@@ -93,10 +93,10 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 ## Authors
 
-- **Emmanuel Lomax** - _Initial work_ - [Emmanuel]( qamanny (github.com))
-- **Leighton Manning** - _Initial work_ - [Leighton Manning]( leightonmanningQA (github.com))
+- **Emmanuel Lomax** - _Initial work_ - [Emmanuel Lomax](https://github.com/qamanny)
+- **Leighton Manning** - _Initial work_ - [Leighton Manning](https://github.com/leightonmanningQA)
 - **Rianna Johnson** - _Initial work_ - [Rianna Johnson](https://github.com/RQAJohnson)
-- **William McCudden-Hughes** - _Initial work_ - [Rianna William]( willmccuddenQA (github.com))
+- **William McCudden-Hughes** - _Initial work_ - [William McCudden-Hughes](https://github.com/willmccuddenQA )
 
 ## License
 
