@@ -18,12 +18,12 @@ const logger = (req, res, next) => {
 app.use(logger);
 
 //importing all of the routes in task.js
-// const TaskRoute= require('./routes/tasks');
+const DiscussionRoute= require('./routes/discussion');
 
 
 
-//associates the task.js file with this one
-// app.use("/task", TaskRoute);
+//associates the discussion.js file with this one
+app.use("/discussion", DiscussionRoute);
 
 //error handling
 app.use((req,res,next)=>{

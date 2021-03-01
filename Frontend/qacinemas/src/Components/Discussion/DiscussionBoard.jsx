@@ -1,10 +1,21 @@
+import CreateDiscussion from "./CreateDiscussion"
+
+
+import { useState } from 'react'
 const DiscussionBoard = () => {
+
+    const [msg, setMsg] = useState('');
+
+    const trigger = (data) => {
+      setMsg(data);
+    }
+  
     return (
         <>
         {/* <h1>Welcome to the discussion board</h1> */}
         <div className="row">
           <div className="col-md-2">
-            {/* <CreateTask trigger={trigger} /> */}
+            <CreateDiscussion trigger={trigger} />
             
           </div>
           <div className="container">
