@@ -1,0 +1,5 @@
+{
+    "DB_URL" : "cluster0.kxiak.mongodb.net:27017",
+    "DB_NAME":"qacinemas"
+    
+}
