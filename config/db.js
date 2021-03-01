@@ -4,13 +4,13 @@ const mongoose = require(`mongoose`);
 const {Schema, model} = mongoose;
 const {DB_URL, DB_NAME} = require('../config/consts.json');
 
-// const taskSchema = new Schema({
-//     name: {type:String, required:true },  //, min length etc
-//     description: String,
-//     completed: Boolean
-// });
+const discussionSchema = new Schema({
+    film: {type:String, required:true },  //, min length etc
+    rating: String,
+    comment: String
+});
 
-// const Task = model('Task',taskSchema);
+const Discussion = model('Discussion',discussionSchema);
 
 mongoose.connect(`mongodb://${DB_URL}/${DB_NAME}`, {useNewUrlParser:true, useUnifiedTopology:true}, (err) =>{
     if(err){
@@ -20,4 +20,4 @@ mongoose.connect(`mongodb://${DB_URL}/${DB_NAME}`, {useNewUrlParser:true, useUni
     }
 });
 
-// module.exports= {"Task":Task};
+module.exports= {"Discussion":Discussion};
