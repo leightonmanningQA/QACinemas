@@ -16,7 +16,10 @@ import OpeningTimes from './Components/OpeningTimes/OpeningTimes';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App"
+    style={{
+      backgroundColor: 'black'
+    }}>
      {/* <p>Hello world!</p> */}
 
      <Router>
