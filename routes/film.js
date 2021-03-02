@@ -2,6 +2,24 @@
 const router = require('express').Router();
 const { Film } = require("../config/db");
 
+router.get("/getNewReleases", (req, res, next) => {
+    Film.find({newRelease: true}, (err, products) => {
+        if (err) {
+            next(err);
+        }
+        res.send(products);
+    });
+});
+
+router.get("/getListings", (req, res, next) => {
+    Film.find({listing: true}, (err, products) => {
+        if (err) {
+            next(err);
+        }
+        res.send(products);
+    });
+});
+
 router.get("/getAll", (req, res, next) => {
     Film.find((err, products) => {
         if (err) {

@@ -13,9 +13,12 @@ const discussionSchema = new Schema({
 const filmSchema = new Schema({
     title: {type:String, required:true },  //, min length etc
     description: {type:String, required:true },
+    actors: {type:String, required:true },
+    director: {type:String, required:true },
+    showingTimes: {type:Array, required:true },
     picture: {type: String, required:true},
-    releaseYear: {type: String, required: true},
-    newRelease:{type: Boolean, requried:true}
+    newRelease:{type: Boolean, requried:true},
+    listing:{type: Boolean, requried:true}
 });
 
 const Discussion = model('Discussion',discussionSchema);
