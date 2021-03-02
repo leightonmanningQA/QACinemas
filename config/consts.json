@@ -1,5 +1,3 @@
 {
-    "DB_URL" : "cluster0.kxiak.mongodb.net:27017",
-    "DB_NAME":"qacinemas"
-    
+    "DB_URL" : "mongodb+srv://root:root@cluster0.kxiak.mongodb.net/qacinemas?retryWrites=true&w=majority"
 }
