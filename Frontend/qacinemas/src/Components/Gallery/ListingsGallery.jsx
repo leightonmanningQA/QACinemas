@@ -1,6 +1,12 @@
+import MovieView from "./FilmView"
+import TicketBooking from "./TicketBooking"
+
 const ListingsGallery = () => {
     return (
-        <h1>Welcome to the Gallery</h1>
+        <>
+        <MovieView/>
+        <TicketBooking/>
+        </>
     )
 }
 export default ListingsGallery
