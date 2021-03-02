@@ -13,6 +13,7 @@ import GettingThere from './Components/GettingThere/GettingThere';
 import Search from './Components/Search/Search';
 import Contact from './Components/Contact/Contact';
 import OpeningTimes from './Components/OpeningTimes/OpeningTimes';
+import DiscussionBoard from './Components/Discussion/DiscussionBoard';
 
 function App() {
   return (
@@ -60,6 +61,9 @@ function App() {
      </Route>
      <Route path="/openingtimes">
       <OpeningTimes/>
+     </Route>
+     <Route path="/discussion">
+      <DiscussionBoard/>
      </Route>
      
      </Switch>

@@ -69,6 +69,9 @@ const Navigation = (props) => {
             <NavItem>
               <NavLink href="/contact">Contact</NavLink>
             </NavItem>
+            <NavItem>
+              <NavLink href="/discussion">Discussion</NavLink>
+            </NavItem>
           </Nav>
           <NavbarText>Simple Text</NavbarText>
         </Collapse>

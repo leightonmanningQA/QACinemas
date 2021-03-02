@@ -17,11 +17,11 @@ const logger = (req, res, next) => {
 // this will print the date before each request.. 
 app.use(logger);
 
-
+//importing all of the routes in task.js
 const filmRoute = require("./routes/film");
-
+const DiscussionRoute= require('./routes/discussion');
 app.use('/film',filmRoute);
-
+app.use("/discussion", DiscussionRoute);
 //error handling
 app.use((req,res,next)=>{
     next(createError(404,'Resource not found'));
