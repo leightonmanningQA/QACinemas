@@ -12,7 +12,7 @@ const discussionSchema = new Schema({
 
 const Discussion = model('Discussion',discussionSchema);
 
-mongoose.connect(`mongodb://${DB_URL}/${DB_NAME}`, {useNewUrlParser:true, useUnifiedTopology:true}, (err) =>{
+mongoose.connect(`${DB_URL}`, {useNewUrlParser:true, useUnifiedTopology:true}, (err) =>{
     if(err){
         console.error(err);
     }else{

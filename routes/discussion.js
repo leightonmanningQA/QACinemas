@@ -18,7 +18,7 @@ router.post("/create", (req,res) => {
     const item = new Discussion(req.body);
     console.log(item);
     item.save()
-    .then((result)=> {res.status(201).send(`${result.film} has been added successfully`)})
+    .then((result)=> {res.status(201).send(`Your comment about ${result.film} has been added successfully!`)})
 
     //refactor to use a middleware function instead!
     .catch((err)=> console.error(err));
