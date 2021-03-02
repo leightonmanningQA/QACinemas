@@ -15,7 +15,7 @@ const About = (props) => {
             Emannuel Lomax
           </ToastHeader>
           <ToastBody>
-          <a class="nav-link" href="https://github.com/qamanny" target="_blank">Manny</a>
+          <p>Github:<a class="nav-link" href="https://github.com/qamanny" target="_blank">Manny</a></p>
           </ToastBody>
         </Toast>
         {/* ------------------------------------------- */}
@@ -24,7 +24,7 @@ const About = (props) => {
             Leighton Manning
           </ToastHeader>
           <ToastBody>
-          <a class="nav-link" href="https://github.com/leightonmanningQA" target="_blank">Leighton</a>
+         <p>Github:<a class="nav-link" href="https://github.com/leightonmanningQA" target="_blank">Leighton</a></p>
           </ToastBody>
         </Toast>
         {/* ---------------------------------------------- */}
@@ -33,7 +33,7 @@ const About = (props) => {
             Rianna Johnson
           </ToastHeader>
           <ToastBody>
-          <a class="nav-link" href="https://github.com/RQAJohnson" target="_blank">Rianna</a>
+          <p>Github:<a class="nav-link" href="https://github.com/RQAJohnson" target="_blank">Rianna</a></p>
           </ToastBody>
         </Toast>
         {/* ---------------------------------------------- */}
@@ -41,8 +41,8 @@ const About = (props) => {
           <ToastHeader>
             William McCudden-Hughes
           </ToastHeader>
-          <ToastBody>
-          <a class="nav-link" href="https://github.com/willmccuddenQA" target="_blank">Will</a>
+          <ToastBody>  
+          <p>Github:<a class="nav-link" href="https://github.com/willmccuddenQA" target="_blank">Will</a></p>
           </ToastBody>
         </Toast>
       </div>
