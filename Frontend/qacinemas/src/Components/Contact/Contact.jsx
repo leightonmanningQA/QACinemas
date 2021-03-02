@@ -6,7 +6,7 @@ import { Toast, ToastBody, ToastHeader } from 'reactstrap';
 const Contact = (props) => {
     return (
     <>
-    <h1>Contact Us</h1>  
+    <h1 className="text-white" textAlign="centre">Contact Us</h1>  
     <div>
       <div className="p-3 my-2 rounded">
         <Toast>
@@ -25,10 +25,10 @@ const Contact = (props) => {
           </ToastHeader>
           <ToastBody>
           <form action="" method="">
-    <div class="col-md">
+    {/* <div class="col-md">
         <label class="form-check-label">First Name:</label>
         <input type="text" name="username" id="username" class="form-control" required/>
-    </div>
+    </div> */}
     <div class="col-md">
         <label class="form-check-label">Email:</label>
         <input type="email" name="email" id="email" class="form-control" required/>
@@ -37,7 +37,8 @@ const Contact = (props) => {
         <label class="form-check-label">Subject:</label>
         <input type="text" name="subject" id="subject" class="form-control" required/>
     </div>
-        <button outline color="primary" type="submit"><a href = "mailto: RJohnson@qa.com">submit</a></button>
+        <button outline color="primary" type="submit">
+            <a href = "mailto: savannah.vaithilingam@qa.com?subject=Issue with website&body=To Monster Cinema,">submit</a></button>
     </form>
           </ToastBody>
         </Toast>
