@@ -1,5 +1,4 @@
 {
     "DB_URL" : "mongodb+srv://root:root@cluster0.kxiak.mongodb.net/qacinemas?retryWrites=true&w=majority",
-    "DB_NAME":"qacinemas"
     
 }

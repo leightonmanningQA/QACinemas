@@ -18,13 +18,10 @@ const logger = (req, res, next) => {
 app.use(logger);
 
 //importing all of the routes in task.js
+const filmRoute = require("./routes/film");
 const DiscussionRoute= require('./routes/discussion');
-
-
-
-//associates the discussion.js file with this one
+app.use('/film',filmRoute);
 app.use("/discussion", DiscussionRoute);
-
 //error handling
 app.use((req,res,next)=>{
     next(createError(404,'Resource not found'));

@@ -2,7 +2,7 @@
 const mongoose = require(`mongoose`);
 
 const {Schema, model} = mongoose;
-const {DB_URL, DB_NAME} = require('../config/consts.json');
+const {DB_URL} = require('../config/consts.json');
 
 const discussionSchema = new Schema({
     film: {type:String, required:true },  //, min length etc
@@ -10,7 +10,20 @@ const discussionSchema = new Schema({
     comment: String
 });
 
+const filmSchema = new Schema({
+    title: {type:String, required:true },  //, min length etc
+    description: {type:String, required:true },
+    actors: {type:String, required:true },
+    director: {type:String, required:true },
+    showingTimes: {type:Array, required:true },
+    picture: {type: String, required:true},
+    newRelease:{type: Boolean, requried:true},
+    listing:{type: Boolean, requried:true}
+});
+
 const Discussion = model('Discussion',discussionSchema);
+
+const Film = model('Film', filmSchema)
 
 mongoose.connect(`${DB_URL}`, {useNewUrlParser:true, useUnifiedTopology:true}, (err) =>{
     if(err){
@@ -21,3 +34,4 @@ mongoose.connect(`${DB_URL}`, {useNewUrlParser:true, useUnifiedTopology:true}, (
 });
 
 module.exports= {"Discussion":Discussion};
+module.exports = {"Film":Film};
