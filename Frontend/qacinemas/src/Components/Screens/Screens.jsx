@@ -28,9 +28,10 @@ const items = [
     },
     {
         id: 4,
-        src:'https://images.squarespace-cdn.com/content/v1/551280e2e4b01593abaf4e7c/1554129586513-JACAV4ENWHPRIMCU1XYO/ke17ZwdGBToddI8pDm48kFmfxoboNKufWj-55Bgmc-J7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iXS6XmVv7bUJ418E8Yoc1hjuviiiZmrL38w1ymUdqq4JaGeFUxjM-HeS7Oc-SSFcg/HEADINGLEY-STADIUM-NANU-SODA-4.jpg',
+        src:'https://storage.googleapis.com/rhinos/uploads/2019/07/6e88ddd1-directors-suite-1-e1562831043556-960x540.jpg',
         altText: 'Slide 4',
         caption: 'Slide 4'
+
       }
   ];
 
@@ -74,7 +75,7 @@ const Screens = (props) => {
       <>      
     <h1 className="text-white" align="center">Standard and Deluxe Seating</h1>
     <div>
-      {/* <style>
+      <style>
         {
           `.custom-tag {
               max-width: 100%;
@@ -82,7 +83,7 @@ const Screens = (props) => {
               background: black;
             }`
         }
-      </style> */}
+      </style>
       <Carousel
         activeIndex={activeIndex}
         next={next}
