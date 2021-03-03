@@ -1,34 +1,59 @@
-import { Container } from 'reactstrap';
+import {Card, CardBody, CardTitle, CardSubtitle, CardText } from 'reactstrap';
 
 const MovieInfo = ({ currentFilm }) => {
     console.log("info: " + currentFilm.title)
-    return (
-        <>
-                <h2 className="text-white">{currentFilm.title}</h2>
-                <br />
-                <br />
-                <h7 className="text-white">{currentFilm.description}</h7>
-                <br />
-                <br />
-                <h7 className="text-white"> Actors: {currentFilm.actors}</h7>
-                <br />
-                <br />
-                <h7 className="text-white"> Director: {currentFilm.director}</h7>
-                <br />
-                <br />
-                <h7 className="text-white"> Showing Times:</h7>
-                <br />
-                <br />
-                <Container>
-                    {currentFilm.showingTimes.map((item) => (
-                        <>
-                            <h8 className="text-white">{item}</h8>
-                            <br />
-                        </>
-                    ))}
-                </Container>
-        </>
-    );
+
+    if(currentFilm.newRelease == true){
+        return (
+            <>
+                <div>
+                    <Card>
+                        <CardBody>
+                            <CardTitle tag="h2">{currentFilm.title}</CardTitle>
+                            <CardSubtitle tag="h5" className="mb-2 text-muted">{currentFilm.description}</CardSubtitle>
+                            <CardText>
+                                Actors: {currentFilm.actors}
+                                <br />
+                                <br />
+                                Director: {currentFilm.director}
+    
+                            </CardText>
+                        </CardBody>
+                    </Card>
+                </div>
+            </>
+        );
+    }else{
+        return (
+            <>
+                <div>
+                    <Card>
+                        <CardBody>
+                            <CardTitle tag="h2">{currentFilm.title}</CardTitle>
+                            <CardSubtitle tag="h5" className="mb-2 text-muted">{currentFilm.description}</CardSubtitle>
+                            <CardText>
+                                Actors: {currentFilm.actors}
+                                <br />
+                                <br />
+                                Director: {currentFilm.director}
+                                <br />
+                                <br />
+                                Showing Times:
+                                <br />
+                                {currentFilm.showingTimes.map((item) => (
+                                    <>
+                                        {item}
+                                        <br />
+                                    </>
+                                ))}
+    
+                            </CardText>
+                        </CardBody>
+                    </Card>
+                </div>
+            </>
+        );
+    }
 }
 
 export default MovieInfo
