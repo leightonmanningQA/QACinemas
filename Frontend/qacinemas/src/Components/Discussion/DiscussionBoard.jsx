@@ -19,11 +19,15 @@ const DiscussionBoard = () => {
     }
   
     return (
+      
         <>
+        
         {/* <h1>Welcome to the discussion board</h1> */}
         <div className="row">
           <div className="col-md-2">
-            <h1 className="text-white">Discussion Board</h1>
+          <div class="jumbotron d-flex align-items-center">
+            <h1>Discussion Board</h1>
+            </div>
           <LoginDiscussion trigger={trigger} loginFunc={loginFunc} loginStatus={loginStatus} />
             <CreateDiscussion trigger={trigger} />
             
