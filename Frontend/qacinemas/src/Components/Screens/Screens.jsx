@@ -16,19 +16,19 @@ const items = [
     },
     {
       id: 2,
-      src:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz69-rTkFpA1DW3HE3XN7882Q0BezTjVpyFQ&usqp=CAU',
+      src:'',
       altText: 'Slide 2',
       caption: 'Slide 2'
     },
     {
       id: 3,
-      src:'https://images.unsplash.com/photo-1580809361436-42a7ec204889?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzB8fGx1eHVyeSUyMGNpbmVtYSUyMGludGVyaW9yfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+      src:'http://photos.cinematreasures.org/production/photos/191157/1478638675/large.JPG?1478638675',
       altText: 'Slide 3',
       caption: 'Slide 3'
     },
     {
         id: 4,
-        src:'https://images.unsplash.com/photo-1485095329183-d0797cdc5676?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTN8fGNpbmVtYXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+        src:'https://pbs.twimg.com/media/DutEiprW0AEl7kw.jpg',
         altText: 'Slide 4',
         caption: 'Slide 4'
       }
@@ -74,7 +74,7 @@ const Screens = (props) => {
       <>      
     <h1 className="text-white" align="center">Standard and Deluxe Seating</h1>
     <div>
-      <style>
+      {/* <style>
         {
           `.custom-tag {
               max-width: 100%;
@@ -82,7 +82,7 @@ const Screens = (props) => {
               background: black;
             }`
         }
-      </style>
+      </style> */}
       <Carousel
         activeIndex={activeIndex}
         next={next}
