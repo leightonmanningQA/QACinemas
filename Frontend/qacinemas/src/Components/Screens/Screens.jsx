@@ -10,25 +10,25 @@ import {
 const items = [
     {
       id: 1,
-      src:'https://www.bonvivant.co.uk/journal/wp-content/uploads//2012/12/electric_shoreditch_interior1.jpg',
+      src:'http://photos.cinematreasures.org/production/photos/191157/1478638675/large.JPG?1478638675',
       altText: 'Slide 1',
       caption: 'Slide 1'
     },
     {
       id: 2,
-      src:'',
+      src:'https://lh3.googleusercontent.com/proxy/AfOt_P2E4ZDjFCt1b93575twLjnQ9Vl3z4Sj_-FJAl4-E7niotLi5mSReVevFr9Wq3oDJ5wnRkXGIT9Yv_nu8vi0MqHm6t4U7h0Q9AwUPmFYUE4teR4WuA53u96WCxNc2AW5tpZk1w',
       altText: 'Slide 2',
       caption: 'Slide 2'
     },
     {
       id: 3,
-      src:'http://photos.cinematreasures.org/production/photos/191157/1478638675/large.JPG?1478638675',
+      src:'https://www.bonvivant.co.uk/journal/wp-content/uploads//2012/12/electric_shoreditch_interior1.jpg',
       altText: 'Slide 3',
       caption: 'Slide 3'
     },
     {
         id: 4,
-        src:'https://pbs.twimg.com/media/DutEiprW0AEl7kw.jpg',
+        src:'https://images.squarespace-cdn.com/content/v1/551280e2e4b01593abaf4e7c/1554129586513-JACAV4ENWHPRIMCU1XYO/ke17ZwdGBToddI8pDm48kFmfxoboNKufWj-55Bgmc-J7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iXS6XmVv7bUJ418E8Yoc1hjuviiiZmrL38w1ymUdqq4JaGeFUxjM-HeS7Oc-SSFcg/HEADINGLEY-STADIUM-NANU-SODA-4.jpg',
         altText: 'Slide 4',
         caption: 'Slide 4'
       }
