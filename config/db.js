@@ -21,9 +21,23 @@ const filmSchema = new Schema({
     listing:{type: Boolean, requried:true}
 });
 
+const bookingSchema = new Schema({
+    film: {type:String, required:true },  //, min length etc
+    date: {type:Date, required:true },
+    time: {type:String, require:true},
+    firstName: {type:String, required:true },
+    lastName: {type:String, required:true },
+    email: {type:String, required:true },
+    adultTickets: {type:Number, required:true },
+    childTickets: {type: Number, required:true},
+    concessionTickets:{type: Number, requried:true}
+});
+
 const Discussion = model('Discussion',discussionSchema);
 
-const Film = model('Film', filmSchema)
+const Film = model('Film', filmSchema);
+
+const Booking = model('Booking', bookingSchema);
 
 mongoose.connect(`${DB_URL}`, {useNewUrlParser:true, useUnifiedTopology:true}, (err) =>{
     if(err){
@@ -35,4 +49,4 @@ mongoose.connect(`${DB_URL}`, {useNewUrlParser:true, useUnifiedTopology:true}, (
 
 
 
-module.exports = {"Film":Film,"Discussion":Discussion};
+module.exports = {"Film":Film,"Discussion":Discussion,"Booking":Booking};
