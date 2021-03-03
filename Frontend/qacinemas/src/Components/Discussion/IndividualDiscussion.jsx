@@ -10,8 +10,8 @@ const IndividualDiscussion= ({item,trigger,loginStatus,loginFunc}) => {
         <>
         <Card>
             <CardBody className="text-center">
-                <CardTitle>Film Name: {item.film}</CardTitle>
-                <CardSubtitle>Film Rating: {item.rating}</CardSubtitle>
+                <CardTitle><h2>Film Name: {item.film}</h2></CardTitle>
+                <CardSubtitle><h2>Film Rating: {item.rating}</h2></CardSubtitle>
                 <CardText>Comment/Review: {item.comment}</CardText>
                 <div className="float-right">
                 <DeleteDiscussion del={item._id}loginStatus={loginStatus}loginFunc={loginFunc}trigger={trigger}/>
