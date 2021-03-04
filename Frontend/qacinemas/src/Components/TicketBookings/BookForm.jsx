@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
-import { Spinner, Form, FormGroup, Label, Input, Card, CardBody, Row, Col, Button } from "reactstrap"
+import { Alert, Spinner, Form, FormGroup, Label, Input, Card, CardBody, Row, Col, Button } from "reactstrap"
+import {Link} from "react-router-dom";
 import axios from "axios";
 
-const BookForm = ({ showForm }) => {
+const BookForm = ({ showForm, setShowForm, bookingNumber, setBookingNumber }) => {
 
     const [date, setDate] = useState("");
     const [firstName, setFirstName] = useState("");
@@ -16,13 +17,25 @@ const BookForm = ({ showForm }) => {
     const [filmList, setFilmList] = useState([]);
     const [isLoaded, setIsLoaded] = useState(false);
     const [error, setError] = useState('');
+    const [showConfirmation, setShowConfirmation] = useState(false);
 
+    const book = (e) => {
+        create(e);
+        setShowForm(false);
+        setShowConfirmation(true);
+    }
 
     const create = (e) => {
         e.preventDefault();
-        axios.post(`http://127.0.0.1:5019/booking/create`, {film,date,time,firstName,lastName,
-            email,adultTickets,childTickets,concessionTickets}
+        axios.post(`http://127.0.0.1:5019/booking/create`, {
+            film, date, time, firstName, lastName,
+            email, adultTickets, childTickets, concessionTickets
+        }
         )
+            .then((res) => {
+                setBookingNumber(res.data._id);
+                console.log(res.data._id);
+            })
             .catch((err) => {
                 console.log(err)
                 setError(err);
@@ -35,7 +48,6 @@ const BookForm = ({ showForm }) => {
         axios.get('http://127.0.0.1:5019/film/getListings')
             .then((res) => {
                 setFilm(res.data[0])
-                console.log(res.data);
                 res.data.map((item) => (
                     setFilmList(filmList => [...filmList, item])
 
@@ -43,13 +55,14 @@ const BookForm = ({ showForm }) => {
                 setIsLoaded(true);
             })
             .catch((err) => {
-                console.log(err);
+                console.log(err)
                 setError(err)
                 setIsLoaded(true);
             })
     }, []);
 
-    if (showForm == true) {
+
+    if (showForm) {
         if (error) {
             return <p>{error}</p>
         } else if (!isLoaded) {
@@ -57,7 +70,7 @@ const BookForm = ({ showForm }) => {
         } else {
             return (
                 <>
-                    <Card>
+                    <Card className="noHoverCard">
                         <CardBody>
                             <Form>
                                 <FormGroup>
@@ -180,14 +193,16 @@ const BookForm = ({ showForm }) => {
                                 <br />
                                 <Row>
                                     <Col xs="3">
-                                        <Button onClick={create}>
-                                            Book and Pay Now
+                                        <Button onClick={book}>
+                                            Book now and pay later!
                                         </Button>
                                     </Col>
-                                    <Col>
-                                        <Button onClick={create}>
-                                            Book and Pay Later
-                                        </Button>
+                                    <Col xs="3">
+                                        <Link to="/payment" bookingNumber={bookingNumber}>
+                                            <Button onClick={book}>
+                                                Book and pay now!
+                                            </Button>
+                                        </Link>
                                     </Col>
                                 </Row>
                             </Form>
@@ -200,6 +215,14 @@ const BookForm = ({ showForm }) => {
 
             )
         }
+    } else if (showConfirmation) {
+        return (
+            <div>
+                <Alert color="success">
+                    Booking Confirmed! Please make a note of your booking reference: {bookingNumber}
+                </Alert>
+            </div>
+        );
     }
     else {
         return (

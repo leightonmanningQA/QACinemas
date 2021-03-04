@@ -27,11 +27,12 @@ const MovieInfo = ({ currentFilm }) => {
         return (
             <>
                 <div>
-                    <Card>
+                    <Card className="noHoverCard">
                         <CardBody>
                             <CardTitle tag="h2">{currentFilm.title}</CardTitle>
                             <CardSubtitle tag="h5" className="mb-2 text-muted">{currentFilm.description}</CardSubtitle>
                             <CardText>
+                                <br/>
                                 Actors: {currentFilm.actors}
                                 <br />
                                 <br />

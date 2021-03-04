@@ -1,7 +1,15 @@
+import { Button } from 'reactstrap';
+import {Link, Route} from 'react-router-dom'
 
-const PayLink = () => {
+const PayLink = ({bookingNumber}) => {
     return (
-        <h4 className="text-white">Pay For Tickets</h4>
+        <>
+        <Link to="/payment" bookingNumber={bookingNumber}>
+            <Button>
+                <h4 className="text-white">Pay For Tickets</h4>
+            </Button>
+        </Link>
+        </>
     );
 }
 

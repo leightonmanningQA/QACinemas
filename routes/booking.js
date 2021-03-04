@@ -11,6 +11,7 @@ router.get("/getAll", (req, res, next) => {
     });
 });
 
+
 router.get("/get/:id", (req, res, next) => {
     Booking.findById(req.params.id, (err, result) => {
         if (err) {
@@ -24,7 +25,7 @@ router.post("/create", ({body}, res, next) => {
     const item = new Booking(body);
     item.save()
         .then((result) => {
-            res.status(201).send(`booking has been added successfully!`);
+            res.status(201).send(result);
         })
         .catch((err) => next(err));
 });
