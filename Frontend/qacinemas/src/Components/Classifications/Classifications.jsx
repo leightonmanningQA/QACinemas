@@ -4,14 +4,14 @@ const Classifications = () => {
     return (
         <div align="center" className="container">
 
-            <div className="classification">
+            <div className="text-white">
             <h1>Classification</h1>
             <p> Classifications can get a little confusing, especially with closely related Classifications.
             12A and 15 seem similar, and it can be hard to tell whether a child is ready for PG when you are used to showing them U. In this section we'll try to explain the various classifications for movies
             so you can make an informed decision.</p>
             </div>
 
-            <div className="universal">
+            <div className="text-white">
             <h2>U: Universal <img width="30"src="https://www.theschoolrun.com/sites/theschoolrun.com/files/u682212/bbfc_u_rgb.png"  alt="Universal Rating"/></h2>
             <p> U rated films whilst having universal in the name are generally suitable for those aged four and above.
             These films though containing mild levels of violence; threat or horror, are generally set within
@@ -22,7 +22,7 @@ const Classifications = () => {
             <p>For further on U ratings or to search for a current U rated film go to: <a href="https://www.bbfc.co.uk/rating/u" target="_blank" rel="noopener">BBFC U-Rating</a> </p>
             </div>
 
-            <div className="parental guidance">
+            <div className="text-white">
             <h2> PG: Parental Guidance <img width="30"src="https://jaybullimore98.files.wordpress.com/2014/12/pg.png"  alt="PG Rating"/></h2>
             <p> PG rated films are the next step up, and though according to the BBFC unaccompanied children of any aged
             are permitted to watch generally 'Parental Guidance' is expected for those under the age of 8.
@@ -34,7 +34,7 @@ const Classifications = () => {
             <p>For further on PG ratings or to search for a current PG rated film go to: <a href="https://www.bbfc.co.uk/rating/pg" target="_blank" rel="noopener">BBFC PG-Rating</a> </p>
             </div>
 
-            <div className="12A">
+            <div className="text-white">
             <h2> 12A/12 Suitable for 12 years and over <img width="30"src="https://louisabroadheadmediablog.files.wordpress.com/2011/12/bbfc_12_rating1.png"  alt="12 Rating"/></h2>
             <p> 12A/12 is the first actual age based classifcation according to BBFC ratings, there is some confusion surrounding 
             12 vs 12A, but the only difference is that 12A refers to cinema releases and 12 refers to video releases but otherwise they are basically
@@ -48,7 +48,7 @@ const Classifications = () => {
             <p>For further on 12 ratings or to search for a current 12 rated film go to: <a href="https://www.bbfc.co.uk/rating/12" target="_blank" rel="noopener">BBFC 12-Rating</a> </p>
             </div>
 
-            <div className="15"> 
+            <div className="text-white"> 
             <h2> 15 – Suitable only for 15 years and over <img width="30"src="https://upload.wikimedia.org/wikipedia/commons/b/b0/BBFC_15_symbol.png"  alt="15 Rating"/></h2>
             <p> 15 is the penulitmate rating the BBFC gives to movies, with no child under the age of 15 being allowed to watch 15 rated films.
             These films compared to 12 rated films allow a level higher in terms of violence, threat and horror, and may depict adult themes such as drug use and sex
@@ -58,7 +58,7 @@ const Classifications = () => {
             <p>For further on 15 ratings or to search for a current 15 rated film go to: <a href="https://www.bbfc.co.uk/rating/15" target="_blank" rel="noopener">BBFC 15-Rating</a> </p>
             </div>
 
-            <div className="18">
+            <div className="text-white">
             <h2> 18 - Suitable for adults <img width="30"src="https://melonfarmers.co.uk/images/cutting_edge_eraser_18.png"  alt="18 Rating"/></h2>
             <p> 18 is the highest level rating the BBFC gives to cinema releases, and unlike the various other BBFC ratings in which details are presented and warning
             given about levels of violence and other such triggers, BBFC states "Adults should be free to choose their own entertainment".
