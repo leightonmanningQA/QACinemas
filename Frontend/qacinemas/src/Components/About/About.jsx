@@ -56,6 +56,8 @@ const About = (props) => {
       Each day of a sprint a scrum meeting is held (by the scrum master) which usually lasts around 15 minutes allowing 
       team members to discuss what they are aiming to complete that day, what they have already completed from the following day and if they 
       have any blockers (computer crashed, internet connection issues) that may prevent them from completing the tasks that they need to.</p><br></br>
+      <h4 className="text-white" align="center">Team Monsters Approach</h4>
+      <p className="text-white"></p>
     <p className="text-white" align="center">For more information follow the link provided:<a class="nav-link" 
     href="https://www.scrum.org/" target="_blank" align="center">Scrum</a></p>
   </div>
