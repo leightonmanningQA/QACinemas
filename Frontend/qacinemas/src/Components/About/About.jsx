@@ -57,9 +57,13 @@ const About = (props) => {
       team members to discuss what they are aiming to complete that day, what they have already completed from the following day and if they 
       have any blockers (computer crashed, internet connection issues) that may prevent them from completing the tasks that they need to.</p><br></br>
       <h4 className="text-white" align="center">Team Monsters Approach</h4>
-      <p className="text-white"></p>
-    <p className="text-white" align="center">For more information follow the link provided:<a class="nav-link" 
-    href="https://www.scrum.org/" target="_blank" align="center">Scrum</a></p>
+      <p className="text-white">Scrum approach worked very well for our team. We quickly rallied around and had a skeleton of code to work with for each team member. 
+      Once completed it allowed us to play to our strengths and volunteer/assign tasks to get the project completed. With every scrum meeting we each took turns 
+      to discuss what we had done the previous day and what we were looking to get completed the upcoming day. Throughout each day we ensured that we were regularly 
+      communicating about the duration of work we had completed and whether there had been any major changes to the git branches that we were working on collectively, 
+      this meant that at every stage we were able to pull down the most current changes to the application whilst continuing to work in our own way.</p><br></br>
+    <p className="text-white" align="center">For more information please follow:<a class="nav-link" 
+    href="https://www.scrum.org/" target="_blank">Scrum</a></p>
   </div>
 
   <div>
