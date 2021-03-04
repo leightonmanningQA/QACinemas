@@ -5,6 +5,14 @@ const { Discussion } = require("../config/db");
 chai.use(chaiHttp); //associate the module with chai
 const app = require('../server')
 
+describe('Discussion', () => {
+    beforeEach((done) => { //Before each test we empty the database
+        Discussion.remove({}, (err) => {
+           done();
+        });
+    });
+
+
 describe(`Discussion Routes`, () => {
 
     it(`Test /getAll route`, (done) => {
@@ -61,7 +69,7 @@ describe(`Discussion Routes`, () => {
         chai.request(app)
             .delete(`/discussion/delete/`+discussion._id)
             .end((err, response) => {
-                console.log(response)
+                // console.log(response)
                 if (err) done(err);
                 expect(err).to.be.null;
                 expect(response).to.not.be.undefined;
@@ -76,5 +84,5 @@ describe(`Discussion Routes`, () => {
     after(() => {
         app.close();
     })
-
+})
 });
