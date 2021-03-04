@@ -3,7 +3,7 @@ const router = require('express').Router();
 const { Film } = require("../config/db");
 
 router.get("/getNewReleases", (req, res, next) => {
-    Film.find({newRelease: true}, (err, products) => {
+    Film.find({ newRelease: true }, (err, products) => {
         if (err) {
             next(err);
         }
@@ -12,7 +12,7 @@ router.get("/getNewReleases", (req, res, next) => {
 });
 
 router.get("/getListings", (req, res, next) => {
-    Film.find({listing: true}, (err, products) => {
+    Film.find({ listing: true }, (err, products) => {
         if (err) {
             next(err);
         }
@@ -38,7 +38,7 @@ router.get("/get/:id", (req, res, next) => {
     })
 })
 
-router.post("/create", ({body}, res, next) => {
+router.post("/create", ({ body }, res, next) => {
     const item = new Film(body);
     item.save()
         .then((result) => {
