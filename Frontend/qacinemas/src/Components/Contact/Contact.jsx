@@ -1,9 +1,12 @@
 import React from 'react';
-import { Table } from 'reactstrap';
-import { Container, Row, Col } from 'reactstrap';
+import {useState} from 'react';
 import { Toast, ToastBody, ToastHeader } from 'reactstrap';
 
 const Contact = (props) => {
+
+    const [subject, setSubject] = useState('')
+    const [message, setMessage] = useState('')
+
     return (
     <>
     <h1 className="text-white" textAlign="centre">Contact Us</h1>
@@ -21,20 +24,22 @@ const Contact = (props) => {
       <div className="p-3 my-2 rounded">
             <Toast>
                 <ToastHeader>
-                    Email Address
+                    Email Us Here!
                 </ToastHeader>
                 <ToastBody>
                     <form action="" method="">
-                        <div class="col-md">
-                            <label class="form-check-label">Email:</label>
-                            <input type="email" name="email" id="email" class="form-control" required/>
-                        </div>
                         <div className="col-md">
                             <label className="form-check-label">Subject:</label>
-                            <input type="text" name="subject" id="subject" class="form-control" required/>
+                            <input type="text" name="subject" id="subject" class="form-control" 
+                            value={subject} onChange={({target}) => setSubject(target.value)} required/>
+                        </div>
+                        <div class="col-md">
+                            <label class="form-check-label">Message:</label>
+                            <input type="text" name="message" id="message" class="form-control" 
+                            value={message} onChange={({target}) => setMessage(target.value)} required/>
                         </div>
                         <button outline color="primary" type="submit">
-                            <a href = "mailto: savannah.vaithilingam@qa.com?subject=Issue with website&body=To Monster Cinema,">submit</a></button>
+                            <a href = {"mailto: savannah.vaithilingam@qa.com?subject=" + subject + "&body=" + message}>submit</a></button>
                     </form>
                 </ToastBody>
             </Toast>
@@ -45,7 +50,7 @@ const Contact = (props) => {
                     Site Address
                 </ToastHeader>
                 <ToastBody>
-                    25 Langbury Lane, T12 M58
+                17-18 Henrietta St, Covent Garden, London WC2E 8QH
                 </ToastBody>
              </Toast>
       </div> 
