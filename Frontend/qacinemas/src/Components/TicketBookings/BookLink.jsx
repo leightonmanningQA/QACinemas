@@ -8,7 +8,7 @@ const BookLink = ({setShowForm}) =>{
 
     return(
         <Button onClick={handleClick}>
-            <h4 className="text-white"> Book Tickets</h4>
+            <h4 className="text-white">Book Tickets</h4>
         </Button>
     );
 }

@@ -14,6 +14,7 @@ import Search from './Components/Search/Search';
 import Contact from './Components/Contact/Contact';
 import OpeningTimes from './Components/OpeningTimes/OpeningTimes';
 import DiscussionBoard from './Components/Discussion/DiscussionBoard';
+import Payment from './Components/TicketBookings/Payment';
 
 function App() {
   return (
@@ -34,6 +35,9 @@ function App() {
      </Route>
      <Route path="/listingsgallery">
       <ListingsGallery/>
+     </Route>
+     <Route path="/payment">
+      <Payment/>
      </Route>
      <Route path="/newreleases">
       <NewReleases/>
