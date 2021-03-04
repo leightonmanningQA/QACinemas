@@ -3,8 +3,8 @@ import React from 'react';
 const PlacesToGo = () => {
   return (
     <div className="container">
-        <h1 align="center">Nearby Venues</h1>
-            <div align="center" className="venue-card">
+        <h1 align="center" className="text-white">Nearby Venues</h1>
+            <div align="center" className="text-white">
                 <img src="https://lh5.googleusercontent.com/p/AF1QipP0_55ERMDFSI5-LDqOfd2YYcDJuHAIDYdE5lbu=w408-h544-k-no" alt="Cafe"/>
                 <h3> WA Cafe Japanese patisserie LTD</h3>
                 <p>Phone: +442072405567</p>
@@ -14,7 +14,7 @@ const PlacesToGo = () => {
                 <p>Deals: Bring your cinema ticket for a 10% discount.</p>
             </div>
 
-            <div align="center" className="venue-card">
+            <div align="center" className="text-white">
                 <img src="https://lh5.googleusercontent.com/p/AF1QipPUGJ7WUBSh2UQKZstLrU8ul-rDVa7n4HWkgkNl=w408-h306-k-no" alt="The National Gallery"/>
                 <h3> The National Gallery</h3>
                 <p>Phone: (+44) 2077472885</p>
@@ -24,7 +24,7 @@ const PlacesToGo = () => {
                 <p>Deals: None at present</p>
             </div>
 
-            <div align="center" className="venue-card">
+            <div align="center" className="text-white">
                 <img src="https://lh5.googleusercontent.com/p/AF1QipP3526Azuy3P-_N7eiGpBa8yRTEKzFmbEVUHcxR=w408-h306-k-no" alt="London Film Museum"/>
                 <h3> London Film Museum </h3>
                 <p>Phone: 02078364913</p>
