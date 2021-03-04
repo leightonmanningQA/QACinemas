@@ -4,8 +4,9 @@
   "description": "QA Project",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "test": "mocha __tests__/",
+    "start": "nodemon server.js",
+    "coverage":"nyc npm test"
   },
   "repository": {
     "type": "git",

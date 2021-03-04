@@ -42,7 +42,7 @@ Discussion.findByIdAndUpdate(req.params.id, req.body, {new:true}, (err)=>{
     if(err){
         next(err);
     }
-    res.status(202).send(`Successfully updated Task with Id:`+req.params.id);
+    res.status(202).send(`Successfully updated comment with Id:`+req.params.id);
     })
 
 });
