@@ -25,23 +25,23 @@ const OpeningTimes = (props) => {
         </tr>
         <tr>
           <th scope="row">Wednesday</th>
-          <td>10:00AM - 22:00PM</td>
+          <td>10:00AM - 23:00PM</td>
         </tr>
         <tr>
           <th scope="row">Thursday</th>
-          <td>10:00AM - 22:00PM</td>
+          <td>10:00AM - 23:00PM</td>
         </tr>
         <tr>
           <th scope="row">Friday</th>
-          <td>10:00AM - 22:00PM</td>
+          <td>10:00AM - 23:00PM</td>
         </tr>
         <tr>
           <th scope="row">Saturday</th>
-          <td>10:00AM - 22:00PM</td>
+          <td>10:00AM - 23:00PM</td>
         </tr>
         <tr>
-          <th scope="row">Tuesday</th>
-          <td>10:00AM - 20:00PM</td>
+          <th scope="row">Sunday</th>
+          <td>12:00PM - 21:00PM</td>
         </tr>
       </tbody>
     </Table>

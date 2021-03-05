@@ -5,7 +5,7 @@ const GettingThere = () => {
             <justify>
                 <img width="1000" src="https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" />
             </justify>
-            <h4 className="text-white">Monster Cinema</h4>
+            <h4 className="text-white">QA Cinema</h4>
             <br></br>
             <h4 className="text-white">17-18 Henrietta St</h4>
             <h4 className="text-white">Covent Garden</h4>

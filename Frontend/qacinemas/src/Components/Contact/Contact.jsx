@@ -45,7 +45,7 @@ const Contact = (props) => {
                     Site Address
                 </ToastHeader>
                 <ToastBody>
-                    25 Langbury Lane, T12 M58
+                    17-18 Henrietta St, WC2E 8QH
                 </ToastBody>
              </Toast>
       </div> 
