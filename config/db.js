@@ -10,6 +10,14 @@ const discussionSchema = new Schema({
     comment: String
 });
 
+const paymentSchema = new Schema({
+    name: {type:String, required:true },  //, min length etc
+    cardNumber: {type:String, required:true },
+    expiryDate: {type:String, required:true },
+    securityCode: {type:String, required:true },
+    order: {type:String, required:true}
+});
+
 const filmSchema = new Schema({
     title: {type:String, required:true },  //, min length etc
     description: {type:String, required:true },
@@ -39,6 +47,8 @@ const Film = model('Film', filmSchema);
 
 const Booking = model('Booking', bookingSchema);
 
+const Payment = model('Payment', paymentSchema);
+
 mongoose.connect(`${DB_URL}`, {useNewUrlParser:true, useUnifiedTopology:true}, (err) =>{
     if(err){
         console.error(err);
@@ -49,4 +59,4 @@ mongoose.connect(`${DB_URL}`, {useNewUrlParser:true, useUnifiedTopology:true}, (
 
 
 
-module.exports = {"Film":Film,"Discussion":Discussion,"Booking":Booking};
+module.exports = {"Film":Film,"Discussion":Discussion,"Booking":Booking, "Payment":Payment};

@@ -4,10 +4,9 @@ import BookForm from "./BookForm";
 import { Container, Row, Col } from 'reactstrap';
 import { useState } from 'react';
 
-const TicketBookings = () => {
+const TicketBookings = ({setBookingReference, bookingReference}) => {
 
     const [showForm, setShowForm] = useState(false);
-    const [bookingNumber, setBookingNumber] = useState("");
 
     return (
         <>
@@ -29,7 +28,7 @@ const TicketBookings = () => {
                 </Row>
                 <br />
                 <br />
-                <BookForm showForm={showForm} setShowForm={setShowForm} bookingNumber={bookingNumber} setBookingNumber={setBookingNumber} />
+                <BookForm showForm={showForm} setShowForm={setShowForm} setBookingReference = {setBookingReference} bookingReference={bookingReference} />
             </Container>
         </>
     );
