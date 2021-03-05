@@ -42,7 +42,7 @@ function App() {
       <ListingsGallery/>
      </Route>
      <Route path="/payment">
-      <Payment bookingReference={bookingReference}/>
+      <Payment bookingReference={bookingReference} setBookingReference={setBookingReference}/>
      </Route>
      <Route path="/newreleases">
       <NewReleases/>

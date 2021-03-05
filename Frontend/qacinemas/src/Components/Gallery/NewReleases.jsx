@@ -31,6 +31,7 @@ const NewReleases = () => {
         return (
             <>
                 <FilmView filmList={filmList} title = "Check out what's coming soon:" />
+                <br/>
             </>
         )
     }

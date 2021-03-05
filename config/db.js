@@ -15,7 +15,7 @@ const paymentSchema = new Schema({
     cardNumber: {type:String, required:true },
     expiryDate: {type:String, required:true },
     securityCode: {type:String, required:true },
-    order: {type:String, required:true}
+    bookingReference: {type:String, required:true}
 });
 
 const filmSchema = new Schema({

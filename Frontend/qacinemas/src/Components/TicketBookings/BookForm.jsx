@@ -25,10 +25,6 @@ const BookForm = ({ showForm, setShowForm, setBookingReference, bookingReference
         setShowConfirmation(true);
     }
 
-    const showBookingRef = () =>{
-        console.log(bookingReference)
-    }
-
     const bookAndPay = (e) => {
         create(e);
         console.log("bookAndPay");
@@ -228,9 +224,6 @@ const BookForm = ({ showForm, setShowForm, setBookingReference, bookingReference
                 <Alert color="success">
                     Booking Confirmed! Please make a note of your booking reference: {bookingReference}
                 </Alert>
-                <Button onClick={showBookingRef}>
-                    Reference
-                </Button>
             </div>
         );
     }

@@ -33,6 +33,7 @@ const ListingsGallery = () => {
                 <FilmView filmList={filmList} title = "Check out what's on at the moment:"  />
                 <br />
                 <TicketBooking />
+                <br/>
             </>
         )
     }
