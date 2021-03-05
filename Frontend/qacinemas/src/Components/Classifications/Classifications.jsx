@@ -1,11 +1,9 @@
-import { Container } from "reactstrap"
-
 const Classifications = () => {
     return (
         <div align="center" className="container">
 
             <div className="text-white">
-            <h1>Classification</h1>
+            <h1>Classifications</h1>
             <p> Classifications can get a little confusing, especially with closely related Classifications.
             12A and 15 seem similar, and it can be hard to tell whether a child is ready for PG when you are used to showing them U. In this section we'll try to explain the various classifications for movies
             so you can make an informed decision.</p>
@@ -59,7 +57,7 @@ const Classifications = () => {
             </div>
 
             <div className="text-white">
-            <h2> 18 - Suitable for adults <img width="30"src="https://melonfarmers.co.uk/images/cutting_edge_eraser_18.png"  alt="18 Rating"/></h2>
+            <h2> 18 - Suitable for adults <img width="30"src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/BBFC_18_2019.svg/800px-BBFC_18_2019.svg.png"  alt="18 Rating"/></h2>
             <p> 18 is the highest level rating the BBFC gives to cinema releases, and unlike the various other BBFC ratings in which details are presented and warning
             given about levels of violence and other such triggers, BBFC states "Adults should be free to choose their own entertainment".
             These films in one theme or another whether it be in terms of violence, drug use or other such topics exceed any threshold other ratings would allow,
