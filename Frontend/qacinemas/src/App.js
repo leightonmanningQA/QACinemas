@@ -15,8 +15,13 @@ import Contact from './Components/Contact/Contact';
 import OpeningTimes from './Components/OpeningTimes/OpeningTimes';
 import DiscussionBoard from './Components/Discussion/DiscussionBoard';
 import Payment from './Components/TicketBookings/Payment';
+import {useState} from "react";
 
 function App() {
+
+  const [bookingReference, setBookingReference] = useState("");
+
+
   return (
     <div className="App"
     style={{
@@ -37,7 +42,7 @@ function App() {
       <ListingsGallery/>
      </Route>
      <Route path="/payment">
-      <Payment/>
+      <Payment bookingReference={bookingReference}/>
      </Route>
      <Route path="/newreleases">
       <NewReleases/>
@@ -49,7 +54,7 @@ function App() {
       <Screens/>
      </Route>
      <Route path="/ticketbookings">
-      <TicketBookings/>
+      <TicketBookings setBookingReference={setBookingReference} bookingReference={bookingReference}/>
      </Route>
      <Route path="/placestogo">
       <PlacesToGo/>

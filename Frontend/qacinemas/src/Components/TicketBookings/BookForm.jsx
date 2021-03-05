@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import { Alert, Spinner, Form, FormGroup, Label, Input, Card, CardBody, Row, Col, Button } from "reactstrap"
-import {Link} from "react-router-dom";
+import { Link, Redirect } from "react-router-dom";
 import axios from "axios";
 
-const BookForm = ({ showForm, setShowForm, bookingNumber, setBookingNumber }) => {
+const BookForm = ({ showForm, setShowForm, setBookingReference, bookingReference }) => {
 
     const [date, setDate] = useState("");
     const [firstName, setFirstName] = useState("");
@@ -25,6 +25,15 @@ const BookForm = ({ showForm, setShowForm, bookingNumber, setBookingNumber }) =>
         setShowConfirmation(true);
     }
 
+    const showBookingRef = () =>{
+        console.log(bookingReference)
+    }
+
+    const bookAndPay = (e) => {
+        create(e);
+        console.log("bookAndPay");
+    }
+
     const create = (e) => {
         e.preventDefault();
         axios.post(`http://127.0.0.1:5019/booking/create`, {
@@ -33,12 +42,11 @@ const BookForm = ({ showForm, setShowForm, bookingNumber, setBookingNumber }) =>
         }
         )
             .then((res) => {
-                setBookingNumber(res.data._id);
-                console.log(res.data._id);
+                setBookingReference(res.data._id);
+                console.log("booking reference:" + bookingReference);
             })
             .catch((err) => {
-                console.log(err)
-                setError(err);
+                console.log(err);
             })
     }
 
@@ -61,13 +69,11 @@ const BookForm = ({ showForm, setShowForm, bookingNumber, setBookingNumber }) =>
             })
     }, []);
 
-
-    if (showForm) {
-        if (error) {
-            return <p>{error}</p>
-        } else if (!isLoaded) {
-            return <Spinner animation="border" role="status" />
-        } else {
+    if (error) {
+        return <p>{error}</p>
+    } else if (!isLoaded) {
+        return <Spinner animation="border" role="status" />
+    } else if (showForm) {
             return (
                 <>
                     <Card className="noHoverCard">
@@ -198,11 +204,11 @@ const BookForm = ({ showForm, setShowForm, bookingNumber, setBookingNumber }) =>
                                         </Button>
                                     </Col>
                                     <Col xs="3">
-                                        <Link to="/payment" bookingNumber={bookingNumber}>
-                                            <Button onClick={book}>
+                                        <Button onClick={bookAndPay}>
+                                            <Link style={{textDecoration: "none"}} className="text-white"  to="/payment">
                                                 Book and pay now!
-                                            </Button>
-                                        </Link>
+                                            </Link>
+                                        </Button>
                                     </Col>
                                 </Row>
                             </Form>
@@ -215,12 +221,16 @@ const BookForm = ({ showForm, setShowForm, bookingNumber, setBookingNumber }) =>
 
             )
         }
-    } else if (showConfirmation) {
+     else if (showConfirmation) {
+        console.log( "Alert " + bookingReference)
         return (
             <div>
                 <Alert color="success">
-                    Booking Confirmed! Please make a note of your booking reference: {bookingNumber}
+                    Booking Confirmed! Please make a note of your booking reference: {bookingReference}
                 </Alert>
+                <Button onClick={showBookingRef}>
+                    Reference
+                </Button>
             </div>
         );
     }

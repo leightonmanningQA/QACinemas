@@ -21,9 +21,11 @@ app.use(logger);
 const filmRoute = require("./routes/film");
 const DiscussionRoute= require('./routes/discussion');
 const bookingRoute = require("./routes/booking");
+const paymentRoute = require("./routes/payment");
 app.use('/film',filmRoute);
 app.use("/discussion", DiscussionRoute);
 app.use("/booking",bookingRoute);
+app.use("/payment",paymentRoute)
 //error handling
 app.use((req,res,next)=>{
     next(createError(404,'Resource not found'));
