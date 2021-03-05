@@ -1,6 +1,8 @@
 import Slider from 'react-animated-slider';
 import horizontalCss from 'react-animated-slider/build/horizontal.css';
+import { Link } from 'react-router-dom';
 import "./Screens.css"
+import "../Gallery/NewReleases"
 
 const items = [
     {
@@ -52,28 +54,31 @@ const Screens = (props) => {
 
       <div className="container" align="center">
       <h3 className="text-white">Standard:</h3>
-      <p className="text-white">The Standard Seats are open to all who wish to enjoy a fun family day out.
-      You can enjoy a variety of activities some of which are listed below.
+      <p className="text-white">The Standard Screens are open to all who wish to enjoy a fun family day out. 
+      The rooms are made up of around 200 seats; Bang and Olufsen surround sound system and 4k screen resolution. 
+      For that all important viewing experience!<br></br>
+      Below you'll find a list of activities which can be enjoyed for people of all ages:
     </p>
     <ul className="text-white" align="center">
       <li>Snacks(including candyfloss and slushies)</li>
       <li>Arcade Games</li>
-      <li>Houses up to 200 people</li>
+      <li></li>
     </ul>
     <br></br>
 
     <h3 className="text-white">Deluxe:</h3>
-      <p className="text-white">The deluxe seats (Directors Box) is made up of no more than 50 seats with high quality recliners,
-      comfortable cushions and footstalls and side lamps every other chair where you as the consumer are able to take charge of how bright or 
-      dark you want the surrounding area to be.
-      See below the range of perks and benefits that come from being a part of this cinema.
+      <p className="text-white">The Deluxe Screens (Directors Box) are made up of no more than 50 seats with high quality recliners;
+      Bang and Olufsen surround sound system; 8k screen resolution; comfortable cushions; footstalls and side lamps 
+      positioned after every other chair. Where you as the consumer are able to take charge of how bright or dark you want the 
+      surrounding area to be.<br></br>
+      Below you'll find a range of perks and benefits that come from being apart of this cinema:
       </p>
     <ul align="center" className="text-white">
       <li>Fine dining and cocktails within the lounge area</li>
-      <li>Ability to rent out screen areas for large social gatherings</li>
-      <li></li>
+      <li>IMAX Screen</li>
+      <li><Link to="../Gallery/NewReleases">Newly Released</Link> Previews</li>
+      <li>Ability to rent out screens for large social gatherings</li>
     </ul>
-
       </div>
       </container>
     </>
