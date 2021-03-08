@@ -26,7 +26,7 @@ const LoginDiscussion = ({trigger,loginFunc,loginStatus}) => {
 
     return (
         <div className="bg-dark" id="sidebar">
-            <Card inverse color="info">
+            <Card inverse color="dark">
                 <CardBody >
                     <CardTitle>Login</CardTitle>
                     <form onSubmit={checklogin}>

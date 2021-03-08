@@ -21,13 +21,16 @@ const DiscussionBoard = () => {
     return (
       
         <>
-        
+          <div class="jumbotron d-flex align-items-center">
+              <div class="container">
+                <h1>Discussion Board</h1>
+         <p>Have your say on your favourite films using the box below. Or login to moderate.</p>
+                </div>
+            </div>
         {/* <h1>Welcome to the discussion board</h1> */}
         <div className="row">
           <div className="col-md-2">
-          <div class="jumbotron d-flex align-items-center">
-            <h1>Discussion Board</h1>
-            </div>
+          
           <LoginDiscussion trigger={trigger} loginFunc={loginFunc} loginStatus={loginStatus} />
             <CreateDiscussion trigger={trigger} />
             
