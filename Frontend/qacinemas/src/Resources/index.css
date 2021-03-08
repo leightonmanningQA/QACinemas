@@ -54,6 +54,11 @@ hr{
     padding-bottom: 0
 }
 
+a:link {
+  text-decoration: none;
+  color:red;
+}
+
 
 small {
     font-size: calc(12px + (15 - 12) * ((100vw - 360px) / (1600 - 360))) !important
