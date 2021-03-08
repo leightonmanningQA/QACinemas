@@ -2,7 +2,6 @@ import Slider from 'react-animated-slider';
 import horizontalCss from 'react-animated-slider/build/horizontal.css';
 import { Link } from 'react-router-dom';
 import "./Screens.css"
-import "../Gallery/NewReleases"
 
 const items = [
     {
@@ -76,7 +75,7 @@ const Screens = (props) => {
     <ul align="center" className="text-white">
       <li>Fine dining and cocktails within the lounge area</li>
       <li>IMAX Screen</li>
-      <li><Link to="../Gallery/NewReleases">Newly Released</Link> Previews</li>
+      <li><Link to="/NewReleases">Newly Released</Link> Previews</li>
       <li>Ability to rent out screens for large social gatherings</li>
     </ul>
       </div>
