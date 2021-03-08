@@ -24,12 +24,12 @@ const Navigation = (props) => {
     return(
         <>  
         <div>
-      <Navbar color="light" light expand="md">
+      <Navbar color="dark" light expand="md">
         <NavbarBrand href="/">Qa Cinemas</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
-            <NavItem>
+            <NavItem style={{color:"white"}}>
               <NavLink href="/about">About</NavLink>
             </NavItem>
             <NavItem>

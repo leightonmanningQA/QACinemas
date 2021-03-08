@@ -15,6 +15,7 @@ import Contact from './Components/Contact/Contact';
 import OpeningTimes from './Components/OpeningTimes/OpeningTimes';
 import DiscussionBoard from './Components/Discussion/DiscussionBoard';
 import Payment from './Components/TicketBookings/Payment';
+import Footer from './Components/Footer';
 import {useState} from "react";
 
 function App() {
@@ -74,8 +75,10 @@ function App() {
      <Route path="/discussion">
       <DiscussionBoard/>
      </Route>
-     
      </Switch>
+
+     <Footer/>
+
      </Router>
      
     </div>
