@@ -1,5 +1,8 @@
 import { Container, Row, Col } from 'reactstrap';
 import React, { useState } from 'react';
+import cinema1 from "../images/cinema1-medium.jpg"
+import cinema2 from "../images/cinema2-medium.jpg"
+import cinema3 from "../images/cinema3-medium.jpg"
 
 import {
   Carousel,
@@ -11,19 +14,19 @@ import {
 
 const items = [
   {
-    src: 'https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+    src: cinema1,
     altText: 'Slide 1',
-    caption: 'Slide 1'
+    caption: 'Good Food'
   },
   {
-    src: "https://images.unsplash.com/photo-1513106580091-1d82408b8cd6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1355&q=80",
+    src: cinema2,
     altText: 'Slide 2',
-    caption: 'Slide 2'
+    caption: 'Big Screens'
   },
   {
-    src: "https://images.unsplash.com/photo-1585647347384-2593bc35786b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    src: cinema3,
     altText: 'Slide 3',
-    caption: 'Slide 3'
+    caption: 'Comfy Seats'
   }
 ];
 
@@ -57,27 +60,32 @@ const Home = (props) => {
         onExited={() => setAnimating(false)}
         key={item.src}
       >
-        <img src={item.src} alt={item.altText} />
-        <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
+        <img src={item.src} alt={item.altText} width="100%" height="750px" />
+        <CarouselCaption captionHeader={item.caption} />
       </CarouselItem>
 
     );
   });
 
   return (
+    <>
+      <br />
       <Container>
-        <Carousel
-          activeIndex={activeIndex}
-          next={next}
-          previous={previous}
-        >
-          <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
-          {slides}
-          <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
-          <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
-        </Carousel>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida tincidunt purus sed dignissim. Ut accumsan in nunc a blandit. Ut vehicula mauris gravida, maximus purus in, fringilla massa. Ut sit amet elit eros. Vivamus finibus, tellus at vehicula condimentum, est nunc auctor augue, commodo faucibus justo enim vitae orci. Nunc elementum, velit ut cursus vulputate, mi augue elementum ipsum, ac venenatis urna ante non justo. Fusce posuere laoreet felis, vitae feugiat neque condimentum et. Vivamus quis efficitur orci. Donec semper est vitae nibh facilisis varius. Pellentesque consectetur metus et egestas lacinia. Suspendisse sed sem consectetur, semper lorem id, suscipit neque. Cras turpis ligula, dictum quis lacus pellentesque, vestibulum pretium arcu. Duis dolor nunc, eleifend vel erat sed, rutrum hendrerit elit. Proin ut ornare metus. Pellentesque fringilla sapien vel dolor pharetra, et rutrum lacus pharetra.</p>
+        <h1 className="text-white text-center display-1">Welcome to QA Cinemas</h1>
       </Container>
+      <br />
+      <Carousel
+        activeIndex={activeIndex}
+        next={next}
+        previous={previous}
+      >
+        <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
+        {slides}
+        <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
+        <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
+      </Carousel>
+      <br />
+    </>
   );
 }
 export default Home
