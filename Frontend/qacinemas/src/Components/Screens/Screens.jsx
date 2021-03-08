@@ -64,7 +64,7 @@ const Screens = (props) => {
       <li></li>
     </ul>
     <br></br>
-
+    
     <h3 className="text-white">Deluxe:</h3>
       <p className="text-white">The Deluxe Screens (Directors Box) are made up of no more than 50 seats with high quality recliners;
       Bang and Olufsen surround sound system; 8k screen resolution; comfortable cushions; footstalls and side lamps 
