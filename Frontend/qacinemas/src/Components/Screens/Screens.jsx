@@ -35,8 +35,7 @@ const Screens = (props) => {
    return (
       <>
       <br></br>
-      <h1 className="text-white" align="center">
-        <em>"You Can't Sit With Us..."</em></h1>
+      <h1 className="text-white text-center display-4">"You Can't Sit With Us..."</h1>
       <br></br>
 
       <container><Slider classNames={horizontalCss} autoplay={2000}>
