@@ -1,5 +1,6 @@
 import {Link} from 'react-router-dom';
 import React, { useState } from 'react';
+import logo from "./images/qalogo.png"
 import {
     Collapse,
     Navbar,
@@ -25,7 +26,9 @@ const Navigation = (props) => {
         <>  
         <div>
       <Navbar color="dark" light expand="md">
-        <NavbarBrand href="/">Qa Cinemas</NavbarBrand>
+        <NavbarBrand href="/">
+        <img src={logo} width="70" height="50" class="d-inline-block align-top" alt=""/>
+          </NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
@@ -73,24 +76,11 @@ const Navigation = (props) => {
               <NavLink href="/discussion">Discussion</NavLink>
             </NavItem>
           </Nav>
-          <NavbarText>Simple Text</NavbarText>
+          
         </Collapse>
       </Navbar>
     </div>
-            {/* <Navbar color="secondary" light expand ="md">
-            <a className="navbar-brand" href="/">QA Cinemas</a>
-            <Link to="/" className="btn btn-outline-light">Home</Link>
-            <Link to="/about" className="btn btn-outline-light">About</Link>
-            <Link to="/gallery" className="btn btn-outline-light">Gallery</Link>
-            <Link to="/openingtimes" className="btn btn-outline-light">Opening Times</Link>
-            <Link to="/classifications" className="btn btn-outline-light">Classifications</Link>
-            <Link to="/screens" className="btn btn-outline-light">Screens</Link>
-            <Link to="/ticketbookings" className="btn btn-outline-light">Ticket Bookings</Link>
-            <Link to="/placestogo" className="btn btn-outline-light">Places To Go</Link>
-            <Link to="/gettingthere" className="btn btn-outline-light">Getting There</Link>
-            <Link to="/search" className="btn btn-outline-light">Search</Link>
-            <Link to="/contact" className="btn btn-outline-light">Contact</Link>
-            </Navbar> */}
+          
         </>
         
     )
