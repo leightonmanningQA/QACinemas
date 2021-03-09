@@ -11,10 +11,15 @@ const TicketBookings = ({setBookingReference, bookingReference}) => {
     return (
         <>
             <Container>
-                <br />
+                <br/>
                 <Row>
                     <Col sm="12" md={{ size: 'auto' }}>
                         <h1 className="text-white">Ticket Bookings</h1>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
+                        <h6 className="text-white">To pay For tickets use the 'Book Tickets' button. To pay for tickets you have booked in advance use the 'Pay For Tickets' Button</h6>
                     </Col>
                 </Row>
                 <br />
@@ -27,8 +32,13 @@ const TicketBookings = ({setBookingReference, bookingReference}) => {
                     </Col>
                 </Row>
                 <br />
-                <br />
                 <BookForm showForm={showForm} setShowForm={setShowForm} setBookingReference = {setBookingReference} bookingReference={bookingReference} />
+
+                <Row>
+                    <Col>
+                        <h6 className="text-white">All tickets are bought according to our terms and conditions, tickets must be cancelled 7 days in advance. Please call us to enquire about changing the time of your viewing.</h6>
+                    </Col>
+                </Row>
             </Container>
         </>
     );

@@ -39,7 +39,7 @@ const MovieImage = ({filmList,setCurrentFilm}) => {
         onExited={() => setAnimating(false)}
         key={item.src}
       >
-        <img src={item.picture} height = "700px" width = "520px" borderRadius="20px" borderWidth="10px" borderColor="white" overflow="hidden"/>
+        <img src={item.picture} style={{borderColor: "white"}} height = "700px" width = "520px"/>
       </CarouselItem>
     );
   });

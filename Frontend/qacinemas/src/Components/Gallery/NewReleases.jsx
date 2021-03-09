@@ -1,5 +1,4 @@
 import FilmView from "./FilmView"
-import TicketBooking from "./TicketBooking"
 import { useEffect, useState } from 'react';
 import {Spinner} from 'reactstrap'
 import axios from 'axios';
@@ -18,6 +17,7 @@ const NewReleases = () => {
                 setIsLoaded(true);
             })
             .catch((err) => {
+                setError(err)
                 console.log(err);
                 setIsLoaded(true);
             })
@@ -30,7 +30,7 @@ const NewReleases = () => {
     } else {
         return (
             <>
-                <FilmView filmList={filmList} title = "Check out what's coming soon:" />
+                <FilmView filmList={filmList} title = "New Releases" description="Here you can find all the most anticipated films of the coming months, all will be playing at QA Cinemas!" />
                 <br/>
             </>
         )

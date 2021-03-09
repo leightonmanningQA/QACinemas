@@ -1,4 +1,3 @@
-import { Divider } from "reactstrap"
 
 const Footer = () => {
     return (

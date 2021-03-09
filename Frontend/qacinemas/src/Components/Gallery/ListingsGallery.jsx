@@ -18,6 +18,7 @@ const ListingsGallery = () => {
                 setIsLoaded(true);
             })
             .catch((err) => {
+                setError(err)
                 console.log(err);
                 setIsLoaded(true);
             })
@@ -30,7 +31,7 @@ const ListingsGallery = () => {
     } else {
         return (
             <>
-                <FilmView filmList={filmList} title = "Check out what's on at the moment:"  />
+                <FilmView filmList={filmList} title = "Listings Gallery" description="Check out all the films we currently have playing at QA cinemas. These are updated weekly with all the most anticipated films of the year from comedies to horrors"  />
                 <br />
                 <TicketBooking />
                 <br/>

@@ -1,4 +1,4 @@
-import { Container, Row, Col } from 'reactstrap';
+import { Container} from 'reactstrap';
 import React, { useState } from 'react';
 import cinema1 from "../images/cinema1-medium.jpg"
 import cinema2 from "../images/cinema2-medium.jpg"
