@@ -17,6 +17,7 @@ const TicketBookings = ({setBookingReference, bookingReference}) => {
                         <h1 className="text-white">Ticket Bookings</h1>
                     </Col>
                 </Row>
+                <br/>
                 <Row>
                     <Col>
                         <h6 className="text-white">To pay For tickets use the 'Book Tickets' button. To pay for tickets you have booked in advance use the 'Pay For Tickets' Button</h6>
@@ -33,10 +34,16 @@ const TicketBookings = ({setBookingReference, bookingReference}) => {
                 </Row>
                 <br />
                 <BookForm showForm={showForm} setShowForm={setShowForm} setBookingReference = {setBookingReference} bookingReference={bookingReference} />
-
+                <br/>
                 <Row>
                     <Col>
-                        <h6 className="text-white">All tickets are bought according to our terms and conditions, tickets must be cancelled 7 days in advance. Please call us to enquire about changing the time of your viewing.</h6>
+                        <h6 className="text-white">All tickets are bought according to our terms and conditions, tickets must be cancelled 7 days in advance. 
+                            Please call us to enquire about changing the time of your viewing. Ticket prices are listed here: <br/><br/>
+                            Adult Ticket: £10 <br/><br/>
+                            Child Ticket: £8 <br/><br/>
+                            Concession Ticket: £8
+
+                            </h6>
                     </Col>
                 </Row>
             </Container>

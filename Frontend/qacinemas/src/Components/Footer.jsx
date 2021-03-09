@@ -4,7 +4,7 @@ const Footer = () => {
         <>
             <div class=" footer-body container-fluid pb-0 mb-0 justify-content-center text-light ">
                 <footer>
-                    <div class="row my-5 justify-content-center py-5">
+                    <div class="row my-5 justify-content-center">
                         <div class="col-11">
                             <div class="row ">
                                 <div class="col-xl-8 col-md-4 col-sm-4 col-12 my-auto mx-auto a">
@@ -13,8 +13,10 @@ const Footer = () => {
                                 <div class="col-xl-2 col-md-4 col-sm-4 col-12">
                                     <h6 class="mb-3 mb-lg-4 bold-text "><b>MENU</b></h6>
                                     <ul class="list-unstyled">
-                                        <li href="/about"><a href="/about">About</a></li>
-                                        <li><a href="/contact">Contact Us</a></li>
+                                        <li><a href="/"><p class="footer-links">Home</p></a></li>
+                                        <li href="/about"><a href="/about"><p class="footer-links">About</p></a></li>
+                                        <li><a href="/contact"><p class="footer-links">Contact Us</p></a></li>
+                                        <li><a href="/gettingthere"><p class="footer-links">Directions</p></a></li>
                                     </ul>
                                 </div>
                                 <div class="col-xl-2 col-md-4 col-sm-4 col-12">
