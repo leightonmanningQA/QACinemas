@@ -47,16 +47,15 @@ const Contact = (props) => {
     </div>    
 
     <div class="col-md-3">
-      <ul >
-        <li>
+      
           <Mailbox color="white"size={25}/>
           <p className="text-white">17-18 Henrietta St, Covent Garden, London WC2E 8QH</p>
-        </li>
-        <li>
+        
+        
           <Phone color="white"size={25}/>
           <p className="text-white">0873 435 9061</p>
-        </li>
-      </ul>
+        
+    
     </div>
   </div>
   <div>
