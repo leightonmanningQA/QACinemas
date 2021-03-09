@@ -47,7 +47,7 @@ hr{
 
 .container-fluid {
     overflow: hidden;
-    margin-top: 250px;
+    margin-top: 150px;
     background:#212529;
     color: #627482 !important;
     margin-bottom: 0;
@@ -63,8 +63,8 @@ small {
     font-size: calc(12px + (15 - 12) * ((100vw - 360px) / (1600 - 360))) !important
 }
 
-ul {
-  list-style-type: none;
+.footer-links{
+  color: #627482
 }
 
 .bold-text {
