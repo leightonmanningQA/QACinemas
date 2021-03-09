@@ -4,7 +4,7 @@ import {Container, Row, Col } from 'reactstrap';
 import FilmImage from "./FilmImage"
 import FilmInfo from "./FilmInfo"
 
-const FilmView = ({filmList, title}) => {
+const FilmView = ({filmList, title, description}) => {
 
     const [currentFilm, setCurrentFilm] = useState({
         showingTimes: [],
@@ -23,7 +23,13 @@ const FilmView = ({filmList, title}) => {
             <br />
             <Container>
                 <Row>
-                    <Col sm="12" md={{ size: 8, offset: 2 }}><h1 className="text-white">{title}</h1></Col>
+                    <Col sm="12" md={{ size: 4, offset: 4 }}><h1 className="text-white">{title}</h1></Col>
+                </Row>
+                <br/>
+                <Row>
+                    <Col>
+                        <h6 className="text-white">{description}</h6>
+                    </Col>
                 </Row>
                 <br />
                 <Row>
