@@ -1,6 +1,8 @@
 import React from 'react';
 import {useState} from 'react';
-import { Toast, ToastBody, ToastHeader } from 'reactstrap';
+import { Input } from 'reactstrap';
+import { Phone, Mailbox} from 'react-bootstrap-icons';
+
 
 const Contact = (props) => {
 
@@ -9,53 +11,62 @@ const Contact = (props) => {
 
     return (
     <>
-    <h1 className="text-white" textAlign="centre">Contact Us</h1>
-    <div>
-        <div className="p-3 my-2 rounded">
-            <Toast>
-                <ToastHeader>
-                    Phone Number
-                </ToastHeader>
-                <ToastBody>
-                    02086295348
-                </ToastBody>
-            </Toast>
-      </div> 
-      <div className="p-3 my-2 rounded">
-            <Toast>
-                <ToastHeader>
-                    Email Us Here!
-                </ToastHeader>
-                <ToastBody>
-                    <form action="" method="">
-                        <div className="col-md">
-                            <label className="form-check-label">Subject:</label>
-                            <input type="text" name="subject" id="subject" class="form-control" 
-                            value={subject} onChange={({target}) => setSubject(target.value)} required/>
-                        </div>
-                        <div class="col-md">
-                            <label class="form-check-label">Message:</label>
-                            <input type="text" name="message" id="message" class="form-control" 
-                            value={message} onChange={({target}) => setMessage(target.value)} required/>
-                        </div>
-                        <button outline color="primary" type="submit">
-                            <a href = {"mailto: savannah.vaithilingam@qa.com?subject=" + subject + "&body=" + message}>submit</a></button>
-                    </form>
-                </ToastBody>
-            </Toast>
-      </div> 
-      <div className="p-3 my-2 rounded">
-            <Toast>
-                <ToastHeader>
-                    Site Address
-                </ToastHeader>
-                <ToastBody>
-                17-18 Henrietta St, Covent Garden, London WC2E 8QH
-                </ToastBody>
-             </Toast>
-      </div> 
+    <div class="container my-5 py-5 z-depth-1">
+    <h1 className="text-white text-center display-3">Get in Touch:</h1>
+
+  <div class="row">
+    <div class="col-md-9 mb-md-0 mb-5">
+      <form>
+        <div class="row" className="text-white">
+
+          <div class="col-md-12">
+            <div class="md-form mb-0">
+            <label className="form-check-label">Subject:</label>
+            <input type="text" name="subject" id="subject" class="form-control" 
+            value={subject} onChange={({target}) => setSubject(target.value)} required/>
+            </div>
+          </div>
+        </div>
+       
+        <div class="row" className="text-white">
+          <div class="col-md-12">
+            <div class="md-form">
+            <label class="form-check-label">Message:</label>
+            <Input type="textarea" className="form-control"
+              placeholder="How can we help?"value={message}onChange={({target})=>setMessage(target.value)} required/>
+                         
+            </div>
+          </div>
+        </div>
+      </form>
+      <br></br>
+
+      <div class="text-center text-md-left">
+        <button variant="primary"><a href = {"mailto: savannah.vaithilingam@qa.com?subject=" + subject + "&body=" + message}>Send</a></button> 
       </div>
+    </div>    
+
+    <div class="col-md-3">
+      <ul >
+        <li>
+          <Mailbox color="white"size={25}/>
+          <p className="text-white">17-18 Henrietta St, Covent Garden, London WC2E 8QH</p>
+        </li>
+        <li>
+          <Phone color="white"size={25}/>
+          <p className="text-white">0873 435 9061</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div>
+        <br></br>
+    <iframe width="400" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas"
+    src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=17-18%20Henrietta%20St%20London+(Monster%20Cinema)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">        
+    </iframe>
+    </div>
+</div>  
     </>
     )
 }
-export default Contact
+export default Contact;
