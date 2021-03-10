@@ -12,7 +12,8 @@ const Contact = (props) => {
     return (
     <>
     <div class="container my-5 py-5 z-depth-1">
-    <h1 className="text-white text-center display-3">Get in Touch:</h1>
+    <h1 className="text-white text-center display-3">Get in Touch</h1>
+    <br></br>
 
   <div class="row">
     <div class="col-md-9 mb-md-0 mb-5">
@@ -47,16 +48,15 @@ const Contact = (props) => {
     </div>    
 
     <div class="col-md-3">
-      <ul >
-        <li>
+      
           <Mailbox color="white"size={25}/>
           <p className="text-white">17-18 Henrietta St, Covent Garden, London WC2E 8QH</p>
-        </li>
-        <li>
+        
+        
           <Phone color="white"size={25}/>
           <p className="text-white">0873 435 9061</p>
-        </li>
-      </ul>
+        
+    
     </div>
   </div>
   <div>
