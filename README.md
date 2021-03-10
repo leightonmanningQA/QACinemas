@@ -36,6 +36,10 @@ testing your application by having Spring running or having an end-point to test
 
 In the project directory, you can run:
 
+**npm install**
+Installs all of the relevant dependencies that will be needed,
+to run the application.
+
 **npm start**
 
 Runs the app in the development mode.
