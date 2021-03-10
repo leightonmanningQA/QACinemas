@@ -7,7 +7,7 @@ const OpeningTimes = (props) => {
     <br></br>
     <br></br>
     <br></br>
-    <Table dark hover>
+    <Table dark hover responsive>
       <thead align="center">
         <tr>
           <th>Day of Week</th>
