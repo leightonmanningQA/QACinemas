@@ -18,6 +18,7 @@ const BookForm = ({ showForm, setShowForm, setBookingReference, bookingReference
     const [isLoaded, setIsLoaded] = useState(false);
     const [error, setError] = useState('');
     const [showConfirmation, setShowConfirmation] = useState(false);
+    const [price, setPrice] = useState(0);
 
     const book = (e) => {
         create(e);
@@ -34,7 +35,7 @@ const BookForm = ({ showForm, setShowForm, setBookingReference, bookingReference
         e.preventDefault();
         axios.post(`http://127.0.0.1:5019/booking/create`, {
             film, date, time, firstName, lastName,
-            email, adultTickets, childTickets, concessionTickets
+            email, adultTickets, childTickets, concessionTickets, price, "paid":false
         }
         )
             .then((res) => {
@@ -45,6 +46,7 @@ const BookForm = ({ showForm, setShowForm, setBookingReference, bookingReference
                 console.log(err);
             })
     }
+
 
 
     useEffect(() => {
@@ -64,6 +66,10 @@ const BookForm = ({ showForm, setShowForm, setBookingReference, bookingReference
                 setIsLoaded(true);
             })
     }, []);
+
+    useEffect(() => {
+        setPrice((adultTickets*10) +(childTickets*8) + (concessionTickets*8));
+    }, [adultTickets, childTickets, concessionTickets])
 
     if (error) {
         return <p>{error}</p>
@@ -190,6 +196,12 @@ const BookForm = ({ showForm, setShowForm, setBookingReference, bookingReference
                                             <option>3</option>
                                             <option>4</option>
                                         </Input>
+                                    </Col>
+                                </Row>
+                                <br/>
+                                <Row>
+                                    <Col>
+                                        <h5> Booking cost: £{price}</h5>
                                     </Col>
                                 </Row>
                                 <br />
