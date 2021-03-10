@@ -43,8 +43,8 @@ In the project directory, you can run:
 
 **npx** > Used to execute packages.
 
-**For example:** _npx create-react-app Name_Of_Project_ (Will begin the creation of your react app) and then
-running _npm start_ in the terminal.
+**For example:** npx create-react-app 'Name_Of_Project' - Will begin the creation of your react app,
+Followed by running npm start in the terminal.
 
 **npm start**
 
