@@ -29,11 +29,29 @@ MongoDB: https://www.mongodb.com/try/download/community
 
 Visual Studio Code: https://www.code.visualstudio.com/download
 
+NodeJS: https://nodejs.org/en/download/
+
 Postman: https://www.postman.com/downloads/ (Underneath 'Start Something new' you should be able to 'Create a request', enter the end-point of the URL you are looking to access data from. E,g https://localhost2021/create/penguin).
 
 ### Available Scripts
 
 In the project directory, you can run:
+
+**npm** & **npx**
+
+npm > Used to install packages, whilst
+npx > Used to execute packages. See below for example,
+
+npx create-react-app <Name_Of_Project>(Will begin the creation of your react app) and then
+npm start in the terminal.
+
+**npm start**
+
+Runs the app in the development mode.
+Open http://localhost:3000 to view it in the browser.
+
+The page will reload if you make edits.
+You will also see any lint errors in the console.
 
 **npm install**
 
@@ -44,14 +62,6 @@ Many ways of installing: 'npm install --save' OR 'npm i --save'.
 Adding '-dev' after '--save' if the dependency you're installing is a development tool
 
 For more information: https://www.npmjs.com/
-
-**npm start**
-
-Runs the app in the development mode.
-Open http://localhost:3000 to view it in the browser.
-
-The page will reload if you make edits.
-You will also see any lint errors in the console.
 
 **npm test**
 
