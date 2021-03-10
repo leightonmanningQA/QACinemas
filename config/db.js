@@ -5,13 +5,13 @@ const {Schema, model} = mongoose;
 const {DB_URL} = require('../config/consts.json');
 
 const discussionSchema = new Schema({
-    film: {type:String, required:true },  //, min length etc
+    film: {type:String, required:true }, 
     rating: String,
     comment: String
 });
 
 const paymentSchema = new Schema({
-    name: {type:String, required:true },  //, min length etc
+    name: {type:String, required:true }, 
     cardNumber: {type:String, required:true },
     expiryDate: {type:String, required:true },
     securityCode: {type:String, required:true },
@@ -19,7 +19,7 @@ const paymentSchema = new Schema({
 });
 
 const filmSchema = new Schema({
-    title: {type:String, required:true },  //, min length etc
+    title: {type:String, required:true }, 
     description: {type:String, required:true },
     actors: {type:String, required:true },
     director: {type:String, required:true },
@@ -30,7 +30,7 @@ const filmSchema = new Schema({
 });
 
 const bookingSchema = new Schema({
-    film: {type:String, required:true },  //, min length etc
+    film: {type:String, required:true },
     date: {type:Date, required:true },
     time: {type:String, require:true},
     firstName: {type:String, required:true },
@@ -38,7 +38,9 @@ const bookingSchema = new Schema({
     email: {type:String, required:true },
     adultTickets: {type:Number, required:true },
     childTickets: {type: Number, required:true},
-    concessionTickets:{type: Number, requried:true}
+    concessionTickets:{type: Number, requried:true},
+    price:{type:Number, required:true},
+    paid:{type:Boolean, required:true}
 });
 
 const Discussion = model('Discussion',discussionSchema);
