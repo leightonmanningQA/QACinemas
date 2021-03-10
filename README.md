@@ -39,11 +39,12 @@ In the project directory, you can run:
 
 **npm** & **npx**
 
-npm > Used to install packages, whilst
-npx > Used to execute packages. See below for example,
+**npm** > Used to install packages, whilst
+
+**npx** > Used to execute packages. See below for example,
 
 npx create-react-app <Name_Of_Project>(Will begin the creation of your react app) and then
-npm start in the terminal.
+running npm start in the terminal.
 
 **npm start**
 
@@ -58,8 +59,10 @@ You will also see any lint errors in the console.
 Installs all of the relevant dependencies that will be needed,
 to run the application.
 
-Many ways of installing: 'npm install --save' OR 'npm i --save'.
+Different ways to install: 'npm install --save' OR 'npm i --save'.
 Adding '-dev' after '--save' if the dependency you're installing is a development tool
+
+For example: npm install <PACKAGE_NAME>
 
 For more information: https://www.npmjs.com/
 
@@ -127,6 +130,4 @@ _For help in [Choosing a license](https://choosealicense.com/)_
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- QA Academy Trainers.
