@@ -55,7 +55,7 @@ const About = (props) => {
 
         <h6 class="font-weight-bold text-white">Rianna Johnson</h6>
         <small class="text-white">Developer</small>
-        <p class="mt-3 text-white">Aang was a better Avatar than Korra and he was only 12.</p>
+        <p class="mt-3 text-white">Tom Hanks brother (Jim Hanks) voices Sheriff Woody in Toy Story when he's too busy.</p>
         <ul class="list-unstyled d-flex justify-content-center mt-3 mb-0 text-muted">
         <li><a class="nav-link" href="https://github.com/RQAJohnson" target="_blank">
           <Github className="mx-3"color="white" size={40}/></a></li>
