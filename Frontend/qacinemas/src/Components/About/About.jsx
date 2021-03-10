@@ -55,7 +55,7 @@ const About = (props) => {
 
         <h6 class="font-weight-bold text-white">Rianna Johnson</h6>
         <small class="text-white">Developer</small>
-        <p class="mt-3 text-white">Tom Hanks brother (Jim Hanks) voices Sheriff Woody in Toy Story when he's too busy.</p>
+        <p class="mt-3 text-white">Tom Hanks's brother (Jim Hanks) voiced Sheriff Woody in Toy Story when he was too busy.</p>
         <ul class="list-unstyled d-flex justify-content-center mt-3 mb-0 text-muted">
         <li><a class="nav-link" href="https://github.com/RQAJohnson" target="_blank">
           <Github className="mx-3"color="white" size={40}/></a></li>
@@ -72,7 +72,7 @@ const About = (props) => {
 
         <h6 class="font-weight-bold text-white">William McCudden-Hughes</h6>
         <small class="text-white">Developer</small>
-        <p class="mt-3 text-white">Sed ut perspiciatis unde omnis natus accusantium.</p>
+        <p class="mt-3 text-white">Leonardo DiCaprio used his real blood in Django Unchained after slicing his hand with broken glass.</p>
         <ul class="list-unstyled d-flex justify-content-center mt-3 mb-0 text-muted">
 
         <li><a class="nav-link" href="https://github.com/willmccuddenQA" target="_blank">

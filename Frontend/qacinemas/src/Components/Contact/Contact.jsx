@@ -12,7 +12,8 @@ const Contact = (props) => {
     return (
     <>
     <div class="container my-5 py-5 z-depth-1">
-    <h1 className="text-white text-center display-3">Get in Touch:</h1>
+    <h1 className="text-white text-center display-3">Get in Touch</h1>
+    <br></br>
 
   <div class="row">
     <div class="col-md-9 mb-md-0 mb-5">
