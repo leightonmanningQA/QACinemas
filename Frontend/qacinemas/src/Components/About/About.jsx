@@ -20,15 +20,12 @@ const About = (props) => {
           class="img-fluid mx-auto" alt="smaple image"/>
         </div>
 
-        <h6 class="font-weight-bold">Emmanuel Lomax</h6>
-        <small class="text-muted">Developer</small>
-        <p class="mt-3 text-muted">Sed ut perspiciatis unde omnis natus accusantium.</p>
+        <h6 class="font-weight-bold text-white">Emmanuel Lomax</h6>
+        <small class="text-white">Developer</small>
+        <p class="mt-3 text-white">Sed ut perspiciatis unde omnis natus accusantium.</p>
         <ul class="list-unstyled d-flex justify-content-center mt-3 mb-0 text-muted">
         <li><a class="nav-link" href="https://github.com/qamanny" target="_blank">
           <Github className="mx-3"color="white" size={40}/></a></li>
-          <li><i class="fab fa-twitter mx-2"></i></li>
-          <li><i class="fab fa-facebook-f mx-2"></i></li>
-          <li><i class="fab fa-instagram mx-2"></i></li>
         </ul>
 
       </div>
@@ -39,15 +36,12 @@ const About = (props) => {
           <img src="https://images.unsplash.com/photo-1610433572201-110753c6cff9?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzZ8fHByb2dyYW1taW5nfGVufDB8MHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" 
           class="img-fluid mx-auto" alt="smaple image"/>
         </div>
-        <h6 class="font-weight-bold">Leighton Manning</h6>
-        <small class="text-muted">Scrum Master & Developer</small>
-        <p class="mt-3 text-muted">Sed ut perspiciatis unde omnis natus accusantium.</p>
+        <h6 class="font-weight-bold text-white">Leighton Manning</h6>
+        <small class="text-white">Scrum Master & Developer</small>
+        <p class="mt-3 text-white">Sed ut perspiciatis unde omnis natus accusantium.</p>
         <ul class="list-unstyled d-flex justify-content-center mt-3 mb-0 text-muted">
         <li><a class="nav-link" href="https://github.com/leightonmanningQA" target="_blank">
           <Github className="mx-3"color="white" size={40}/></a></li>
-          <li><i class="fab fa-twitter mx-2"></i></li>
-          <li><i class="fab fa-facebook-f mx-2"></i></li>
-          <li><i class="fab fa-instagram mx-2"></i></li>
         </ul>
 
       </div>
@@ -55,20 +49,16 @@ const About = (props) => {
       <div class="col-md-3 mb-4">
 
         <div class="view z-depth-1 mb-4">
-          <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTJ8fGNvZGluZ3xlbnwwfDB8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" 
+          <img src="https://images.unsplash.com/photo-1526498460520-4c246339dccb?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mzd8fHByb2dyYW1taW5nfGVufDB8MHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" 
           class="img-fluid mx-auto" alt="smaple image"/>
         </div>
 
-        <h6 class="font-weight-bold">Rianna Johnson</h6>
-        <small class="text-muted">Developer</small>
-        <p class="mt-3 text-muted">Sed ut perspiciatis unde omnis natus accusantium.</p>
+        <h6 class="font-weight-bold text-white">Rianna Johnson</h6>
+        <small class="text-white">Developer</small>
+        <p class="mt-3 text-white">Sed ut perspiciatis unde omnis natus accusantium.</p>
         <ul class="list-unstyled d-flex justify-content-center mt-3 mb-0 text-muted">
         <li><a class="nav-link" href="https://github.com/RQAJohnson" target="_blank">
           <Github className="mx-3"color="white" size={40}/></a></li>
-
-          <li><i class="fab fa-twitter mx-2"></i></li>
-          <li><i class="fab fa-facebook-f mx-2"></i></li>
-          <li><i class="fab fa-instagram mx-2"></i></li>
         </ul>
 
       </div>
@@ -80,16 +70,13 @@ const About = (props) => {
            class="img-fluid mx-auto" alt="smaple image"/>
         </div>
 
-        <h6 class="font-weight-bold">William McCudden-Hughes</h6>
-        <small class="text-muted">Developer</small>
-        <p class="mt-3 text-muted">Sed ut perspiciatis unde omnis natus accusantium.</p>
+        <h6 class="font-weight-bold text-white">William McCudden-Hughes</h6>
+        <small class="text-white">Developer</small>
+        <p class="mt-3 text-white">Sed ut perspiciatis unde omnis natus accusantium.</p>
         <ul class="list-unstyled d-flex justify-content-center mt-3 mb-0 text-muted">
 
         <li><a class="nav-link" href="https://github.com/willmccuddenQA" target="_blank">
           <Github className="mx-3"color="white" size={40}/></a></li>
-          <li><i class="fab fa-twitter mx-2"></i></li>
-          <li><i class="fab fa-facebook-f mx-2"></i></li>
-          <li><i class="fab fa-instagram mx-2"></i></li>
         </ul>
 
       </div>
@@ -120,8 +107,9 @@ const About = (props) => {
       the git branches that we were working on collectively, this meant that at every stage of the building process, we were able to pull down the most current 
       changes to the application whilst continuing to work in our own way.</p>
       <br></br>
+      <span className="block-example border border-dark">
     <p className="text-white" align="center"><i>For more information please follow:</i><a class="nav-link" 
-    href="https://www.scrum.org/" target="_blank">Scrum</a></p>
+    href="https://www.scrum.org/" target="_blank">Scrum</a></p></span>
   </div>
 
   {/* <div>
