@@ -22,7 +22,7 @@ const About = (props) => {
 
         <h6 class="font-weight-bold text-white">Emmanuel Lomax</h6>
         <small class="text-white">Developer</small>
-        <p class="mt-3 text-white">Sed ut perspiciatis unde omnis natus accusantium.</p>
+        <p class="mt-3 text-white">I'm so clever, that sometimes I don't undersand a single line of code I just wrote.</p>
         <ul class="list-unstyled d-flex justify-content-center mt-3 mb-0 text-muted">
         <li><a class="nav-link" href="https://github.com/qamanny" target="_blank">
           <Github className="mx-3"color="white" size={40}/></a></li>
@@ -38,7 +38,7 @@ const About = (props) => {
         </div>
         <h6 class="font-weight-bold text-white">Leighton Manning</h6>
         <small class="text-white">Scrum Master & Developer</small>
-        <p class="mt-3 text-white">Sed ut perspiciatis unde omnis natus accusantium.</p>
+        <p class="mt-3 text-white">Resembling mysterious code the green digits in the matrix are in fact symbols from a sushi cookbook.</p>
         <ul class="list-unstyled d-flex justify-content-center mt-3 mb-0 text-muted">
         <li><a class="nav-link" href="https://github.com/leightonmanningQA" target="_blank">
           <Github className="mx-3"color="white" size={40}/></a></li>
@@ -119,7 +119,6 @@ const About = (props) => {
   </div> */}
  
 </>  
-
     )
 }
 export default About;
