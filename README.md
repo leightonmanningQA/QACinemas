@@ -29,16 +29,21 @@ MongoDB: https://www.mongodb.com/try/download/community
 
 Visual Studio Code: https://www.code.visualstudio.com/download
 
-Postman: https://www.postman.com/downloads/ (Underneath 'Start Something new' you should be able to 'Create a request', and begin
-testing your application by having Spring running or having an end-point to test).
+Postman: https://www.postman.com/downloads/ (Underneath 'Start Something new' you should be able to 'Create a request', enter the end-point of the URL you are looking to access data from. E,g https://localhost2021/createbaguette).
 
 ### Available Scripts
 
 In the project directory, you can run:
 
 **npm install**
+
 Installs all of the relevant dependencies that will be needed,
 to run the application.
+
+Many ways of installing: 'npm install --save' OR 'npm i --save'.
+Adding '-dev' after '--save' if the dependency you're installing is a development tool
+
+For more information: https://www.npmjs.com/
 
 **npm start**
 
