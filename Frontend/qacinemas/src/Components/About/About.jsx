@@ -22,7 +22,7 @@ const About = (props) => {
 
         <h6 class="font-weight-bold text-white">Emmanuel Lomax</h6>
         <small class="text-white">Developer</small>
-        <p class="mt-3 text-white">I'm so clever, that sometimes I don't undersand a single line of code I just wrote.</p>
+        <p class="mt-3 text-white">Dwayne Johnson's character (Jumanji, 2017) can't read the map because paper beats Rock.</p>
         <ul class="list-unstyled d-flex justify-content-center mt-3 mb-0 text-muted">
         <li><a class="nav-link" href="https://github.com/qamanny" target="_blank">
           <Github className="mx-3"color="white" size={40}/></a></li>
