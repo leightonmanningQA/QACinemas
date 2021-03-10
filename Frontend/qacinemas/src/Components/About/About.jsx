@@ -10,7 +10,7 @@ const About = (props) => {
   <h1 className="text-white text-center display-4">Meet The Team</h1>
 
    <div className="container" align="center">
-    <p class="lead text-center text-muted pt-2 mb-5">Enim ad minim exercitation ullamco laboris nisi ut ex aliquip.</p>
+    <p className="lead text-center text-white pt-2 mb-5">Who Are We? | What is Scrum? | Our Approach.</p>
 
     <div class="row">
       <div class="col-md-3 mb-4">
