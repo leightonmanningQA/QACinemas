@@ -39,9 +39,7 @@ In the project directory, you can run:
 
 **npm** & **npx**
 
-**npm** > Used to install packages, whilst
-
-**npx** > Used to execute packages.
+**npm** > Used to install packages. **npx** > Used to execute packages.
 
 **For example:** npx create-react-app 'Name_Of_Project' - Will begin the creation of your react app,
 Followed by running npm start in the terminal.
