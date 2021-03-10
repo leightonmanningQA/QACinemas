@@ -41,10 +41,10 @@ In the project directory, you can run:
 
 **npm** > Used to install packages, whilst
 
-**npx** > Used to execute packages. See below for example,
+**npx** > Used to execute packages.
 
-npx create-react-app <Name_Of_Project>(Will begin the creation of your react app) and then
-running npm start in the terminal.
+**For example:** _npx create-react-app Name_Of_Project_ (Will begin the creation of your react app) and then
+running _npm start_ in the terminal.
 
 **npm start**
 
@@ -59,10 +59,10 @@ You will also see any lint errors in the console.
 Installs all of the relevant dependencies that will be needed,
 to run the application.
 
-Different ways to install: 'npm install --save' OR 'npm i --save'.
-Adding '-dev' after '--save' if the dependency you're installing is a development tool
+Different ways to install: '_npm install --save_' OR '_npm i --save_'.
+Adding '_-dev_' after '_--save_' if the dependency you're installing is a development tool
 
-For example: npm install <PACKAGE_NAME>
+**For example:** npm install PACKAGE_NAME
 
 For more information: https://www.npmjs.com/
 
@@ -82,7 +82,7 @@ Your app is ready to be deployed!
 See the section about deployment for more information.
 
 **npm run eject**
-Note: this is a one-way operation. Once you eject, you can’t go back!
+Note: this is a one-way operation. **Once you eject, you can’t go back!**
 
 If you aren’t satisfied with the build tool and configuration choices, you can eject at any time. This command will remove the single build dependency from your project.
 
