@@ -55,7 +55,7 @@ const About = (props) => {
 
         <h6 class="font-weight-bold text-white">Rianna Johnson</h6>
         <small class="text-white">Developer</small>
-        <p class="mt-3 text-white">Sed ut perspiciatis unde omnis natus accusantium.</p>
+        <p class="mt-3 text-white">Aang was a better Avatar than Korra and he was only 12.</p>
         <ul class="list-unstyled d-flex justify-content-center mt-3 mb-0 text-muted">
         <li><a class="nav-link" href="https://github.com/RQAJohnson" target="_blank">
           <Github className="mx-3"color="white" size={40}/></a></li>
@@ -78,18 +78,14 @@ const About = (props) => {
         <li><a class="nav-link" href="https://github.com/willmccuddenQA" target="_blank">
           <Github className="mx-3"color="white" size={40}/></a></li>
         </ul>
-
       </div>
-      
-
+    
     </div>
     <hr class="w-header my-4"/>
-</div>
+    </div>
   
-  
-
-  <div align="center" className="container">
-    <h3 className="text-white" align="center">What is Scrum?</h3>
+  <div align="center" className="container text-white text-center">
+    <h4 >What is Scrum?</h4>
     <p className="text-white">Scrum is a framework which is used to allow teams to work together in an agile way. The goal being to productively solve problems 
       and work on projects via sprints, which on average last between 2 weeks and a month. Before the start of any sprint a meeting is usually held, 
       allowing team members the opportunity to discuss how long each sprint will last for and which tasks to begin. 
@@ -98,8 +94,9 @@ const About = (props) => {
       team members the opportunity to discuss what they are aiming to complete that day; what they have already completed from the following day and if they 
       have any blockers (computer crashed, internet connection issues) that may prevent them from completing the tasks that they need to.</p>
       <br></br>
+      <br></br>
 
-      <h4 className="text-white" align="center">-Team Monsters Approach-</h4>
+      <h4>Team Monsters Approach</h4>
       <p className="text-white">As a team we took a positive and motivated approach. We quickly rallied around and had a basic template of code to work with for each team member. 
       Once completed it allowed us to play to our strengths and volunteer/assign tasks to get the project completed. With every scrum meeting we each took turns 
       to discuss what had been done the previous day and what we were looking to complete for that day. 
@@ -107,10 +104,12 @@ const About = (props) => {
       the git branches that we were working on collectively, this meant that at every stage of the building process, we were able to pull down the most current 
       changes to the application whilst continuing to work in our own way.</p>
       <br></br>
-      <span className="block-example border border-dark">
-    <p className="text-white" align="center"><i>For more information please follow:</i><a class="nav-link" 
-    href="https://www.scrum.org/" target="_blank">Scrum</a></p></span>
-  </div>
+
+      <span className="block-example border border-light">
+        <p><i>For more information please follow:</i><a class="nav-link" 
+        href="https://www.scrum.org/" target="_blank">Scrum</a></p>
+        </span>
+        </div>
 
   {/* <div>
     <p className="text-white">Follow the link below to our contact page</p>
