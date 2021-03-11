@@ -1,6 +1,6 @@
 # Getting Started
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 # Project Title: QACinemas
 
@@ -29,25 +29,48 @@ MongoDB: https://www.mongodb.com/try/download/community
 
 Visual Studio Code: https://www.code.visualstudio.com/download
 
-Postman: https://www.postman.com/downloads/ (Underneath 'Start Something new' you should be able to 'Create a request', and begin
-testing your application by having Spring running or having an end-point to test).
+NodeJS: https://nodejs.org/en/download/
+
+Postman: https://www.postman.com/downloads/ (Underneath 'Start Something new' you should be able to 'Create a request', enter the end-point of the URL you are looking to access data from. E,g https://localhost2021/create/penguin).
 
 ### Available Scripts
 
 In the project directory, you can run:
 
-npm start
+**npm** & **npx**
+
+**npm** > Used to install packages. **npx** > Used to execute packages.
+
+**For example:** npx create-react-app 'Name_Of_Project' - Will begin the creation of your react app,
+Followed by running npm start in the terminal.
+
+**npm start**
+
 Runs the app in the development mode.
 Open http://localhost:3000 to view it in the browser.
 
 The page will reload if you make edits.
 You will also see any lint errors in the console.
 
-npm test
+**npm install**
+
+Installs all of the relevant dependencies that will be needed,
+to run the application.
+
+Different ways to install: '_npm install --save_' OR '_npm i --save_'.
+Adding '_-dev_' after '_--save_' if the dependency you're installing is a development tool
+
+**For example:** npm install PACKAGE_NAME
+
+For more information: https://www.npmjs.com/
+
+**npm test**
+
 Launches the test runner in the interactive watch mode.
 See the section about running tests for more information.
 
-npm run build
+**npm run build**
+
 Builds the app for production to the build folder.
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
@@ -56,8 +79,8 @@ Your app is ready to be deployed!
 
 See the section about deployment for more information.
 
-npm run eject
-Note: this is a one-way operation. Once you eject, you can’t go back!
+**npm run eject**
+Note: this is a one-way operation. **Once you eject, you can’t go back!**
 
 If you aren’t satisfied with the build tool and configuration choices, you can eject at any time. This command will remove the single build dependency from your project.
 
@@ -96,7 +119,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 - **Emmanuel Lomax** - _Initial work_ - [Emmanuel Lomax](https://github.com/qamanny)
 - **Leighton Manning** - _Initial work_ - [Leighton Manning](https://github.com/leightonmanningQA)
 - **Rianna Johnson** - _Initial work_ - [Rianna Johnson](https://github.com/RQAJohnson)
-- **William McCudden-Hughes** - _Initial work_ - [William McCudden-Hughes](https://github.com/willmccuddenQA )
+- **William McCudden-Hughes** - _Initial work_ - [William McCudden-Hughes](https://github.com/willmccuddenQA)
 
 ## License
 
@@ -105,8 +128,4 @@ _For help in [Choosing a license](https://choosealicense.com/)_
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
-
-
+- QA Academy Trainers.
