@@ -45,26 +45,5 @@ router.delete("/delete/:id", (req, res) => {
     });
 });
 
-router.patch("/update/:id", (req, res) => {
-    Booking.findByIdAndUpdate(req.params.id,
-        req.body,
-        { new: true },
-        (err) => {
-            if (err) {
-                console.log(err);
-            }
-            res.status(202).send(`Successfully updated!`);
-        })
-});
-
-router.put("/replace/:id", (req, res) => {
-    Booking.findByIdAndUpdate(req.params.id, req.body, { new: true }, (err) => {
-        if (err) {
-            console.log(err);
-        }
-        res.status(202).send(`Successfully replaced!`);
-    });
-});
-
 
 module.exports = router; 

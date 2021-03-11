@@ -48,16 +48,16 @@ router.patch("/update/:id", (req, res, next) => {
             if (err) {
                 next(err);
             }
-            res.status(202).send(`Successfully updated!`);
+            res.status(202).send(`Successfully updated: ${req.params.id}`);
         })
 });
 
-router.put("/replace/:id", (req, res, next) => {
+router.patch("/replace/:id", (req, res, next) => {
     Payment.findByIdAndUpdate(req.params.id, req.body, { new: true }, (err) => {
         if (err) {
             next(err);
         }
-        res.status(202).send(`Successfully replaced!`);
+        res.status(202).send(`Successfully replaced: ${req.params.id}`);
     });
 });
 
